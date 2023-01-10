@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://userzeor.github.io/2023/01/10/git-add-again-remote/</loc>
+    <loc>https://userzeor.github.io/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://userzeor.github.io/2023/01/10/git-add-again-remote/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -200,13 +200,6 @@
 
   
   <url>
-    <loc>https://userzeor.github.io/tags/flutter/</loc>
-    <lastmod>2023-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://userzeor.github.io/tags/dart/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -214,7 +207,7 @@
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/tags/git/</loc>
+    <loc>https://userzeor.github.io/tags/flutter/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -249,7 +242,14 @@
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/tags/nvm/</loc>
+    <loc>https://userzeor.github.io/tags/git/</loc>
+    <lastmod>2023-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://userzeor.github.io/tags/web/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/tags/web/</loc>
+    <loc>https://userzeor.github.io/tags/nvm/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
