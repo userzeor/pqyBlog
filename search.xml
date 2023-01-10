@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>从零开始搭建一个flutter项目</title>
+    <url>/pqyBlog/2019/07/17/flutter/</url>
+    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
+<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
+<p>flutter packages get<br>配置镜像不然报错</p>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+]]></content>
+      <categories>
+        <category>移动端开发</category>
+      </categories>
+      <tags>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>dart学习笔记</title>
     <url>/pqyBlog/2020/09/05/dart%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="类型检测操作符"><a href="#类型检测操作符" class="headerlink" title="类型检测操作符"></a>类型检测操作符</h2><table>
@@ -74,38 +92,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从零开始搭建一个flutter项目</title>
-    <url>/pqyBlog/2019/07/17/flutter/</url>
-    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
-
-<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
-<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
-<p>flutter packages get<br>配置镜像不然报错</p>
-<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
-]]></content>
-      <categories>
-        <category>移动端开发</category>
-      </categories>
-      <tags>
-        <tag>flutter</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>flutter运行时卡住的解决办法</title>
-    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
-<p>解决方法：</p>
-<p>修改项目中<code>android/build.gradle</code>文件</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>移动端开发</category>
-      </categories>
-      <tags>
-        <tag>flutter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo 常用命令集合</title>
     <url>/pqyBlog/2019/07/17/hexo/</url>
     <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><blockquote><ol>
@@ -125,6 +111,20 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>flutter运行时卡住的解决办法</title>
+    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
+<p>解决方法：</p>
+<p>修改项目中<code>android/build.gradle</code>文件</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>移动端开发</category>
+      </categories>
+      <tags>
+        <tag>flutter</tag>
       </tags>
   </entry>
   <entry>
@@ -187,6 +187,26 @@
       </tags>
   </entry>
   <entry>
+    <title>npm-check-updates工具包的安装与使用</title>
+    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
+    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
+
+<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发插件命令</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>npm常用命令</title>
     <url>/pqyBlog/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="常用查询命令"><a href="#常用查询命令" class="headerlink" title="常用查询命令"></a>常用查询命令</h1><h2 id="1、安装模块"><a href="#1、安装模块" class="headerlink" title="1、安装模块"></a>1、安装模块</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install &lt;package&gt;   　　　　　　　　　　　　　　　              安装包，默认会安装最新的版本</span><br><span class="line">npm install &lt;package&gt;@&lt;version&gt;                             　　  安装指定版本</span><br><span class="line">npm install &lt;package&gt; --save 或 npm install &lt;package&gt; -S          安装包并将安装包信息将加入到dependencies（生产阶段的依赖）</span><br><span class="line">npm install &lt;package&gt; --save-dev 或 npm install &lt;package&gt; -D 　　　安装包并将安装包信息将加入到devDependencies（开发阶段的依赖），所以开发阶段一般使用它</span><br><span class="line">npm install &lt;package&gt; --save-optional 或 npm install &lt;package&gt; -O 安装包并将安装包信息将加入到optionalDependencies（可选阶段的依赖）</span><br><span class="line">npm install &lt;package&gt; --save-exact 或 npm install &lt;package&gt; -E    精确安装指定模块版本</span><br><span class="line">npm install gulp -g 或 npm install gulp --global                  全局安装包</span><br></pre></td></tr></table></figure>
@@ -225,26 +245,6 @@
       </tags>
   </entry>
   <entry>
-    <title>npm-check-updates工具包的安装与使用</title>
-    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
-    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
-
-<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
-
-<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>开发插件命令</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nvm常用命令</title>
     <url>/pqyBlog/2023/01/08/nvm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h2 id="1、显示可下载版本的部分列表"><a href="#1、显示可下载版本的部分列表" class="headerlink" title="1、显示可下载版本的部分列表"></a>1、显示可下载版本的部分列表</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">nvm list available </span><br></pre></td></tr></table></figure>
@@ -264,22 +264,6 @@
       </categories>
       <tags>
         <tag>nvm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端开发中常见问题合集</title>
-    <url>/pqyBlog/2023/01/01/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="前端开发中常见问题合集"><a href="#前端开发中常见问题合集" class="headerlink" title="前端开发中常见问题合集"></a>前端开发中常见问题合集</h1><h3 id="1-使用better-scroll插件时的一些问题"><a href="#1-使用better-scroll插件时的一些问题" class="headerlink" title="1. 使用better-scroll插件时的一些问题"></a>1. 使用better-scroll插件时的一些问题</h3><ol>
-<li>使用<font face="宋体" color=#c7254e size=4><strong>scrollInit</strong></font>初始化滑动容器，然后异步请求接口数据时直接赋值容器不能滑动,这是因为scroll在初始化时列表数据为空导致滚动容器高度为0，请求完数据scroll组件并不知道，所以需要手动刷新容器</li>
-</ol>
-<h6 id="解决代码如下："><a href="#解决代码如下：" class="headerlink" title="解决代码如下："></a>解决代码如下：</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 异步加载的数据，手动刷新容器</span><br><span class="line">  var arr = await getData();</span><br><span class="line">  this.list = arr;</span><br><span class="line">  this.$nextTick(() =&gt; &#123;</span><br><span class="line">    this.scroll.refresh();</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
-<h5 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a><font face="宋体" color=#c7254e size=3><strong>注意！</strong></font></h5><p><strong>this.list为你遍历的列表数据，<br>this.scroll为你的滚动容器，<br>this.scroll.refresh();必须放在dom加载完在执行，此处已vue为例写在this.$nextTick的回调中</strong></p>
-]]></content>
-      <categories>
-        <category>前端开发</category>
-      </categories>
-      <tags>
-        <tag>web</tag>
       </tags>
   </entry>
   <entry>
@@ -319,6 +303,22 @@
       </categories>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端开发中常见问题合集</title>
+    <url>/pqyBlog/2023/01/01/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="前端开发中常见问题合集"><a href="#前端开发中常见问题合集" class="headerlink" title="前端开发中常见问题合集"></a>前端开发中常见问题合集</h1><h3 id="1-使用better-scroll插件时的一些问题"><a href="#1-使用better-scroll插件时的一些问题" class="headerlink" title="1. 使用better-scroll插件时的一些问题"></a>1. 使用better-scroll插件时的一些问题</h3><ol>
+<li>使用<font face="宋体" color=#c7254e size=4><strong>scrollInit</strong></font>初始化滑动容器，然后异步请求接口数据时直接赋值容器不能滑动,这是因为scroll在初始化时列表数据为空导致滚动容器高度为0，请求完数据scroll组件并不知道，所以需要手动刷新容器</li>
+</ol>
+<h6 id="解决代码如下："><a href="#解决代码如下：" class="headerlink" title="解决代码如下："></a>解决代码如下：</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 异步加载的数据，手动刷新容器</span><br><span class="line">  var arr = await getData();</span><br><span class="line">  this.list = arr;</span><br><span class="line">  this.$nextTick(() =&gt; &#123;</span><br><span class="line">    this.scroll.refresh();</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<h5 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a><font face="宋体" color=#c7254e size=3><strong>注意！</strong></font></h5><p><strong>this.list为你遍历的列表数据，<br>this.scroll为你的滚动容器，<br>this.scroll.refresh();必须放在dom加载完在执行，此处已vue为例写在this.$nextTick的回调中</strong></p>
+]]></content>
+      <categories>
+        <category>前端开发</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
       </tags>
   </entry>
 </search>
