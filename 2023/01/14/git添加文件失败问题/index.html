@@ -23,26 +23,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"userzeor.github.io","root":"/pqyBlog/","images":"/pqyBlog/images","scheme":"Gemini","darkmode":true,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/pqyBlog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/pqyBlog/js/config.js"></script>
 
-    <meta name="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
-<meta property="og:type" content="website">
-<meta property="og:title" content="pengqy的个人博客">
-<meta property="og:url" content="https://userzeor.github.io/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4/index.html">
+    <meta name="description" content="当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误1fatal: in unpopulated submodule &amp;#x27;themes&#x2F;next&amp;#x27;  1. 先取消第三方的远程连接，然后执行以下命令即可解决1git rm -rf --cached .\next\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git添加文件失败问题">
+<meta property="og:url" content="https://userzeor.github.io/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="pengqy的个人博客">
-<meta property="og:description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+<meta property="og:description" content="当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误1fatal: in unpopulated submodule &amp;#x27;themes&#x2F;next&amp;#x27;  1. 先取消第三方的远程连接，然后执行以下命令即可解决1git rm -rf --cached .\next\">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-14T08:12:30.000Z">
+<meta property="article:modified_time" content="2023-01-14T08:17:45.529Z">
 <meta property="article:author" content="pengqy">
-<meta property="article:tag" content="pqy的个人博客 前端 html5 css3 es6 vue React npm git flutter mysql webpack dart hexo vpn vps">
+<meta property="article:tag" content="git add添加文件失败问题">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://userzeor.github.io/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="https://userzeor.github.io/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/开发框架命令/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://userzeor.github.io/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/","path":"2023/01/14/git添加文件失败问题/","title":"git添加文件失败问题"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类: 开发框架命令 | pengqy的个人博客</title>
+<title>git添加文件失败问题 | pengqy的个人博客</title>
   
 
   <script src="/pqyBlog/js/third-party/analytics/baidu-analytics.js"></script>
@@ -131,7 +133,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -144,6 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BD%93%E6%88%91%E4%BB%AC%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E6%A8%A1%E5%9D%97%E4%B8%BA%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8B%89%E5%8F%96%E7%9A%84%EF%BC%8C%E5%9C%A8%E6%88%91%E4%BB%ACgit-add%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E6%97%B6%E4%BC%9A%E6%8A%A5%E5%A6%82%E4%B8%8B%E9%94%99%E8%AF%AF"><span class="nav-number">1.</span> <span class="nav-text">当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%85%88%E5%8F%96%E6%B6%88%E7%AC%AC%E4%B8%89%E6%96%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%EF%BC%8C%E7%84%B6%E5%90%8E%E6%89%A7%E8%A1%8C%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E8%A7%A3%E5%86%B3"><span class="nav-number">1.1.</span> <span class="nav-text">1. 先取消第三方的远程连接，然后执行以下命令即可解决</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -198,94 +201,145 @@
 
     </div>
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">开发框架命令
-          <small>分类</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="git添加文件失败问题 | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git添加文件失败问题
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+
+      <time title="创建时间：2023-01-14 16:12:30 / 修改时间：16:17:45" itemprop="dateCreated datePublished" datetime="2023-01-14T16:12:30+08:00">2023-01-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>71</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误"><a href="#当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误" class="headerlink" title="当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误"></a>当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: in unpopulated submodule &#x27;themes/next&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-先取消第三方的远程连接，然后执行以下命令即可解决"><a href="#1-先取消第三方的远程连接，然后执行以下命令即可解决" class="headerlink" title="1. 先取消第三方的远程连接，然后执行以下命令即可解决"></a>1. 先取消第三方的远程连接，然后执行以下命令即可解决</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -rf --cached .\next\</span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-01-08T16:16:11+08:00"
-              content="2023-01-08">
-          01-08
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/pqyBlog/images/wechatpay.png" alt="pengqy 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/pqyBlog/images/alipay.jpg" alt="pengqy 支付宝">
+        <span>支付宝</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/pqyBlog/2023/01/08/nvm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">nvm常用命令</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-01-08T15:36:20+08:00"
-              content="2023-01-08">
-          01-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/pqyBlog/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">npm常用命令</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2019</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2019-07-17T22:19:25+08:00"
-              content="2019-07-17">
-          07-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/pqyBlog/2019/07/17/hexo/" itemprop="url">
-            <span itemprop="name">hexo 常用命令集合</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/pqyBlog/tags/git-add%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> git add添加文件失败问题</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/" rel="prev" title="git文件丢失问题">
+                  <i class="fa fa-chevron-left"></i> git文件丢失问题
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
 </div>
   </main>
 
@@ -394,7 +448,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"userzeor","repo":"pqyBlog","client_id":"b6f9894e765d68ca0464","client_secret":"1947adb25eb7550ade46f448d7c4889cef8c066a","admin_user":"userzeor","distraction_free_mode":true,"proxy":"https://proxy.cors.sh/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"623ec39993daaa1317d8b976cbc24fae"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"userzeor","repo":"pqyBlog","client_id":"b6f9894e765d68ca0464","client_secret":"1947adb25eb7550ade46f448d7c4889cef8c066a","admin_user":"userzeor","distraction_free_mode":true,"proxy":"https://proxy.cors.sh/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"a8207debdd891f66f5be34ad89b710bd"}</script>
 <script src="/pqyBlog/js/third-party/comments/gitalk.js"></script>
 
 </body>
