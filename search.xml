@@ -55,6 +55,24 @@
       </tags>
   </entry>
   <entry>
+    <title>从零开始搭建一个flutter项目</title>
+    <url>/pqyBlog/2019/07/17/flutter/</url>
+    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
+<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
+<p>flutter packages get<br>配置镜像不然报错</p>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+]]></content>
+      <categories>
+        <category>移动端开发</category>
+      </categories>
+      <tags>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>flutter 开发中遇到的问题</title>
     <url>/pqyBlog/2020/09/05/flutter%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="flutter-开发中遇到的问题"><a href="#flutter-开发中遇到的问题" class="headerlink" title="flutter 开发中遇到的问题"></a>flutter 开发中遇到的问题</h1><h4 id="在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题"><a href="#在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题" class="headerlink" title="在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题"></a>在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题</h4><hr>
@@ -74,37 +92,17 @@
       </tags>
   </entry>
   <entry>
-    <title>从零开始搭建一个flutter项目</title>
-    <url>/pqyBlog/2019/07/17/flutter/</url>
-    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
-
-<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
-<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
-<p>flutter packages get<br>配置镜像不然报错</p>
-<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
-]]></content>
+    <title>flutter运行时卡住的解决办法</title>
+    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
+<p>解决方法：</p>
+<p>修改项目中<code>android/build.gradle</code>文件</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>移动端开发</category>
       </categories>
       <tags>
         <tag>flutter</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git文件丢失问题</title>
-    <url>/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"><a href="#git项目初始化后没提交本地代码直接pull导致文件丢失问问题" class="headerlink" title="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"></a>git项目初始化后没提交本地代码直接pull导致文件丢失问问题</h1><h2 id="1-此时切勿慌张乱删文件"><a href="#1-此时切勿慌张乱删文件" class="headerlink" title="1. 此时切勿慌张乱删文件"></a>1. <font color="red">此时切勿慌张乱删文件</font></h2><h2 id="2-在命令行中进入项目目录输入以下命令查看你的git操作日志"><a href="#2-在命令行中进入项目目录输入以下命令查看你的git操作日志" class="headerlink" title="2. 在命令行中进入项目目录输入以下命令查看你的git操作日志"></a>2. 在命令行中进入项目目录输入以下命令查看你的git操作日志</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/pqyBlog/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
-
-<h2 id="4-复制commitId执行以下命令重置到pull之前的样子"><a href="#4-复制commitId执行以下命令重置到pull之前的样子" class="headerlink" title="4. 复制commitId执行以下命令重置到pull之前的样子"></a>4. 复制commitId执行以下命令重置到pull之前的样子</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset --hard (复制的commitId)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git文件丢失问题</tag>
       </tags>
   </entry>
   <entry>
@@ -149,6 +147,22 @@
       </tags>
   </entry>
   <entry>
+    <title>git文件丢失问题</title>
+    <url>/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"><a href="#git项目初始化后没提交本地代码直接pull导致文件丢失问问题" class="headerlink" title="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"></a>git项目初始化后没提交本地代码直接pull导致文件丢失问问题</h1><h2 id="1-此时切勿慌张乱删文件"><a href="#1-此时切勿慌张乱删文件" class="headerlink" title="1. 此时切勿慌张乱删文件"></a>1. <font color="red">此时切勿慌张乱删文件</font></h2><h2 id="2-在命令行中进入项目目录输入以下命令查看你的git操作日志"><a href="#2-在命令行中进入项目目录输入以下命令查看你的git操作日志" class="headerlink" title="2. 在命令行中进入项目目录输入以下命令查看你的git操作日志"></a>2. 在命令行中进入项目目录输入以下命令查看你的git操作日志</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/pqyBlog/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
+
+<h2 id="4-复制commitId执行以下命令重置到pull之前的样子"><a href="#4-复制commitId执行以下命令重置到pull之前的样子" class="headerlink" title="4. 复制commitId执行以下命令重置到pull之前的样子"></a>4. 复制commitId执行以下命令重置到pull之前的样子</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset --hard (复制的commitId)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git文件丢失问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 常用命令集合</title>
     <url>/pqyBlog/2019/07/17/hexo/</url>
     <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><blockquote><ol>
@@ -171,20 +185,6 @@
       </tags>
   </entry>
   <entry>
-    <title>flutter运行时卡住的解决办法</title>
-    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
-<p>解决方法：</p>
-<p>修改项目中<code>android/build.gradle</code>文件</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>移动端开发</category>
-      </categories>
-      <tags>
-        <tag>flutter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mac上node版本和fsevents版本冲突</title>
     <url>/pqyBlog/2023/01/01/mac%E4%B8%8Anode%E7%89%88%E6%9C%AC%E5%92%8Cfsevents%E7%89%88%E6%9C%AC%E5%86%B2%E7%AA%81/</url>
     <content><![CDATA[<h2 id="mac上node版本和fsevents版本"><a href="#mac上node版本和fsevents版本" class="headerlink" title="mac上node版本和fsevents版本"></a>mac上node版本和fsevents版本</h2><h4 id="当node升级到12-0版本以上在进行npm-install时会报错"><a href="#当node升级到12-0版本以上在进行npm-install时会报错" class="headerlink" title="当node升级到12.0版本以上在进行npm install时会报错"></a><strong>当node升级到12.0版本以上在进行npm install时会报错</strong></h4><h5 id="以下是错误日志："><a href="#以下是错误日志：" class="headerlink" title="以下是错误日志："></a>以下是错误日志：</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">../../../../nan/nan_converters_43_inl.h:22:1: warning: &#x27;ToBoolean&#x27; is deprecated: ToBoolean can never throw. Use Local version. [-Wdeprecated-declarations]</span><br><span class="line">X(Boolean)</span><br><span class="line">^</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:18:12: note: expanded from macro &#x27;X&#x27;</span><br><span class="line">      val-&gt;To ## TYPE(isolate-&gt;GetCurrentContext())                            \\\n           ^</span><br><span class="line">&lt;scratch space&gt;:201:1: note: expanded from here</span><br><span class="line">ToBoolean</span><br><span class="line">^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2523:3: note: &#x27;ToBoolean&#x27; has been explicitly marked deprecated here</span><br><span class="line">  V8_DEPRECATE_SOON(\&quot;ToBoolean can never throw. Use Local version.\&quot;,</span><br><span class="line">  ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8config.h:322:29: note: expanded from macro &#x27;V8_DEPRECATE_SOON&#x27;</span><br><span class="line">  declarator __attribute__((deprecated(message)))</span><br><span class="line">                            ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:221:</span><br><span class="line">In file included from ../../../../nan/nan_converters.h:67:</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:40:1: warning: &#x27;BooleanValue&#x27; is deprecated: BooleanValue can never throw. Use Isolate version. [-Wdeprecated-declarations]</span><br><span class="line">X(bool, Boolean)</span><br><span class="line">^</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:37:15: note: expanded from macro &#x27;X&#x27;</span><br><span class="line">  return val-&gt;NAME ## Value(isolate-&gt;GetCurrentContext());                     \\\n              ^</span><br><span class="line">&lt;scratch space&gt;:208:1: note: expanded from here</span><br><span class="line">BooleanValue</span><br><span class="line">^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2561:3: note: &#x27;BooleanValue&#x27; has been explicitly marked deprecated here</span><br><span class="line">  V8_DEPRECATED(\&quot;BooleanValue can never throw. Use Isolate version.\&quot;,</span><br><span class="line">  ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8config.h:307:29: note: expanded from macro &#x27;V8_DEPRECATED&#x27;</span><br><span class="line">  declarator __attribute__((deprecated(message)))</span><br><span class="line">                            ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:103:42: error: no viable conversion from &#x27;v8::Isolate *&#x27; to &#x27;Local&lt;v8::Context&gt;&#x27;</span><br><span class="line">  return scope.Escape(v8::Function::New( isolate</span><br><span class="line">                                         ^~~~~~~</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:183:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from &#x27;v8::Isolate *&#x27; to &#x27;const v8::Local&lt;v8::Context&gt; &amp;&#x27; for 1st argument</span><br><span class="line">class Local &#123;</span><br><span class="line">      ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:183:7: note: candidate constructor (the implicit move constructor) not viable: no known conversion from &#x27;v8::Isolate *&#x27; to &#x27;v8::Local&lt;v8::Context&gt; &amp;&amp;&#x27; for 1st argument</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:187:13: note: candidate template ignored: could not match &#x27;Local&lt;type-parameter-0-0&gt;&#x27; against &#x27;v8::Isolate *&#x27;</span><br><span class="line">  V8_INLINE Local(Local&lt;S&gt; that)</span><br><span class="line">            ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:4126:22: note: passing argument to parameter &#x27;context&#x27; here</span><br><span class="line">      Local&lt;Context&gt; context, FunctionCallback callback,</span><br><span class="line">                     ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:37: error: too few arguments to function call, expected 2, have 1</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">         ~~~~~~~~~~~~~~~~~~~~~      ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:5380:3: note: &#x27;New&#x27; declared here</span><br><span class="line">  static Local&lt;Value&gt; New(Isolate* isolate, Local&lt;String&gt; value);</span><br><span class="line">  ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:58: error: expected &#x27;(&#x27; for function-style cast or type construction</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">                                         ~~~~~~~~~~~~~~~~^</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:60: error: expected expression</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">                                                           ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">../../../../nan/nan.h:1063:44: error: no matching member function for call to &#x27;ToString&#x27;</span><br><span class="line">      v8::Local&lt;v8::String&gt; string = from-&gt;ToString();</span><br><span class="line">                                     ~~~~~~^~~~~~~~</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2528:44: note: candidate function not viable: requires single argument &#x27;context&#x27;, but no arguments were provided</span><br><span class="line">  V8_WARN_UNUSED_RESULT MaybeLocal&lt;String&gt; ToString(</span><br><span class="line">                                           ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2544:35: note: candidate function not viable: requires single argument &#x27;isolate&#x27;, but no arguments were provided</span><br><span class="line">                    Local&lt;String&gt; ToString(Isolate* isolate) const);</span><br><span class="line">                                  ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -204,23 +204,43 @@
       </tags>
   </entry>
   <entry>
-    <title>npm-check-updates工具包的安装与使用</title>
-    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
-    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
+    <title>mysql8.0.17安装和配置</title>
+    <url>/pqyBlog/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>去官网下载 mysql–&gt; <a href="https://dev.mysql.com/downloads/mysql/">下载地址</a></p>
+<h3 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h3><p>在解压后的根目录，需要做两步小操作</p>
+<ol>
+<li>创建一个名为 data 的文件夹</li>
+<li>创建一个名为 my.ini 的文件</li>
+</ol>
+<h3 id="3-修改-my-ini-文件"><a href="#3-修改-my-ini-文件" class="headerlink" title="3.修改 my.ini 文件"></a>3.修改 my.ini 文件</h3><p>default-character-set 设置成 utf8 会报错，建议直接复制下面的粘贴</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">=</span>utf8mb4</span><br><span class="line">[mysqld]</span><br><span class="line"># 设置<span class="number">3306</span>端口</span><br><span class="line">port <span class="operator">=</span> <span class="number">3306</span></span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64</span><br><span class="line"># 设置mysql数据库的数据的存放目录</span><br><span class="line">datadir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\data</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections<span class="operator">=</span><span class="number">20</span></span><br><span class="line"># 服务端使用的字符集默认为<span class="number">8</span>比特编码的latin1字符集</span><br><span class="line"><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">-</span>server<span class="operator">=</span>utf8mb4</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span>storage<span class="operator">-</span>engine<span class="operator">=</span>INNODB</span><br></pre></td></tr></table></figure>
 
-<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
+<h3 id="4-配置-mysql-的环境变量"><a href="#4-配置-mysql-的环境变量" class="headerlink" title="4.配置 mysql 的环境变量"></a>4.配置 mysql 的环境变量</h3><ol>
+<li>找到安装 mysql 的 bin 目录复制存放地址</li>
+<li>编辑系统环境变量</li>
+<li>找到 path 点击新建粘贴复制的地址</li>
+</ol>
+<h3 id="5-以管理员身份运行-cmd"><a href="#5-以管理员身份运行-cmd" class="headerlink" title="5.以管理员身份运行 cmd"></a>5.以管理员身份运行 cmd</h3><ol>
+<li>切换到安装 mysql 的 bin 目录</li>
+<li>执行 mysqld install 命令</li>
+<li>执行 mysqld –initialize –user&#x3D;mysql –console 命令</li>
+<li>执行 net start mysql 命令</li>
+<li>执行 mysql -u root -p 命令</li>
+<li>修改密码</li>
+</ol>
+<h4 id="注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错"><a href="#注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错" class="headerlink" title="注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错"></a><strong>注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错</strong></h4><blockquote>
+<p>执行 mysqld –initialize –user&#x3D;mysql –console 命令会输出如下</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">44</span>:<span class="number">52.051415</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013169</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server <span class="keyword">in</span> progress <span class="keyword">as</span> process <span class="number">3336</span></span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">08.437004</span>Z <span class="number">5</span> [Note] [MY<span class="number">-010454</span>] [Server] A temporary password <span class="keyword">is</span> generated <span class="keyword">for</span> root<span class="variable">@localhost</span>: <span class="operator">%</span>IhckOVm8fK0</span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">16.083958</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013170</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server has completed</span><br></pre></td></tr></table></figure>
 
-<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
-
-<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><strong>此处会生成一个临时密码例如：</strong><br>A temporary password is generated for root@localhost: &#x3D;&#x3D;<strong>%IhckOVm8fK0</strong>&#x3D;&#x3D;，<br>等下登录 mysql 时需要用到，尽量复制，不然很容易写错</p>
+<h5 id="修改密码命令"><a href="#修改密码命令" class="headerlink" title="修改密码命令"></a>修改密码命令</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;新密码&#x27;</span>;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>开发插件命令</category>
+        <category>框架的安装与使用</category>
       </categories>
       <tags>
-        <tag>npm</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -257,6 +277,26 @@
 ]]></content>
       <categories>
         <category>开发框架命令</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm-check-updates工具包的安装与使用</title>
+    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
+    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
+
+<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发插件命令</category>
       </categories>
       <tags>
         <tag>npm</tag>
@@ -337,46 +377,6 @@
       </categories>
       <tags>
         <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql8.0.17安装和配置</title>
-    <url>/pqyBlog/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>去官网下载 mysql–&gt; <a href="https://dev.mysql.com/downloads/mysql/">下载地址</a></p>
-<h3 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h3><p>在解压后的根目录，需要做两步小操作</p>
-<ol>
-<li>创建一个名为 data 的文件夹</li>
-<li>创建一个名为 my.ini 的文件</li>
-</ol>
-<h3 id="3-修改-my-ini-文件"><a href="#3-修改-my-ini-文件" class="headerlink" title="3.修改 my.ini 文件"></a>3.修改 my.ini 文件</h3><p>default-character-set 设置成 utf8 会报错，建议直接复制下面的粘贴</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">=</span>utf8mb4</span><br><span class="line">[mysqld]</span><br><span class="line"># 设置<span class="number">3306</span>端口</span><br><span class="line">port <span class="operator">=</span> <span class="number">3306</span></span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64</span><br><span class="line"># 设置mysql数据库的数据的存放目录</span><br><span class="line">datadir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\data</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections<span class="operator">=</span><span class="number">20</span></span><br><span class="line"># 服务端使用的字符集默认为<span class="number">8</span>比特编码的latin1字符集</span><br><span class="line"><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">-</span>server<span class="operator">=</span>utf8mb4</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span>storage<span class="operator">-</span>engine<span class="operator">=</span>INNODB</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-配置-mysql-的环境变量"><a href="#4-配置-mysql-的环境变量" class="headerlink" title="4.配置 mysql 的环境变量"></a>4.配置 mysql 的环境变量</h3><ol>
-<li>找到安装 mysql 的 bin 目录复制存放地址</li>
-<li>编辑系统环境变量</li>
-<li>找到 path 点击新建粘贴复制的地址</li>
-</ol>
-<h3 id="5-以管理员身份运行-cmd"><a href="#5-以管理员身份运行-cmd" class="headerlink" title="5.以管理员身份运行 cmd"></a>5.以管理员身份运行 cmd</h3><ol>
-<li>切换到安装 mysql 的 bin 目录</li>
-<li>执行 mysqld install 命令</li>
-<li>执行 mysqld –initialize –user&#x3D;mysql –console 命令</li>
-<li>执行 net start mysql 命令</li>
-<li>执行 mysql -u root -p 命令</li>
-<li>修改密码</li>
-</ol>
-<h4 id="注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错"><a href="#注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错" class="headerlink" title="注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错"></a><strong>注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错</strong></h4><blockquote>
-<p>执行 mysqld –initialize –user&#x3D;mysql –console 命令会输出如下</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">44</span>:<span class="number">52.051415</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013169</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server <span class="keyword">in</span> progress <span class="keyword">as</span> process <span class="number">3336</span></span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">08.437004</span>Z <span class="number">5</span> [Note] [MY<span class="number">-010454</span>] [Server] A temporary password <span class="keyword">is</span> generated <span class="keyword">for</span> root<span class="variable">@localhost</span>: <span class="operator">%</span>IhckOVm8fK0</span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">16.083958</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013170</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server has completed</span><br></pre></td></tr></table></figure>
-
-<p><strong>此处会生成一个临时密码例如：</strong><br>A temporary password is generated for root@localhost: &#x3D;&#x3D;<strong>%IhckOVm8fK0</strong>&#x3D;&#x3D;，<br>等下登录 mysql 时需要用到，尽量复制，不然很容易写错</p>
-<h5 id="修改密码命令"><a href="#修改密码命令" class="headerlink" title="修改密码命令"></a>修改密码命令</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;新密码&#x27;</span>;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>框架的安装与使用</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
 </search>
