@@ -232,14 +232,14 @@
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/tags/git-add%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://userzeor.github.io/tags/git%E9%87%8D%E6%96%B0%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E8%BF%9E%E6%8E%A5/</loc>
     <lastmod>2023-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://userzeor.github.io/tags/git%E9%87%8D%E6%96%B0%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E8%BF%9E%E6%8E%A5/</loc>
+    <loc>https://userzeor.github.io/tags/git-add%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2023-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -281,6 +281,13 @@
   </url>
   
   <url>
+    <loc>https://userzeor.github.io/tags/web/</loc>
+    <lastmod>2023-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://userzeor.github.io/tags/nvm/</loc>
     <lastmod>2023-01-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -289,13 +296,6 @@
   
   <url>
     <loc>https://userzeor.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://userzeor.github.io/tags/web/</loc>
     <lastmod>2023-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

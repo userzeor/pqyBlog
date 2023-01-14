@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>dart学习笔记</title>
-    <url>/pqyBlog/2020/09/05/dart%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2020/09/05/dart%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="类型检测操作符"><a href="#类型检测操作符" class="headerlink" title="类型检测操作符"></a>类型检测操作符</h2><table>
 <thead>
 <tr>
@@ -55,26 +55,8 @@
       </tags>
   </entry>
   <entry>
-    <title>从零开始搭建一个flutter项目</title>
-    <url>/pqyBlog/2019/07/17/flutter/</url>
-    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
-
-<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
-<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
-<p>flutter packages get<br>配置镜像不然报错</p>
-<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
-]]></content>
-      <categories>
-        <category>移动端开发</category>
-      </categories>
-      <tags>
-        <tag>flutter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>flutter 开发中遇到的问题</title>
-    <url>/pqyBlog/2020/09/05/flutter%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2020/09/05/flutter%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="flutter-开发中遇到的问题"><a href="#flutter-开发中遇到的问题" class="headerlink" title="flutter 开发中遇到的问题"></a>flutter 开发中遇到的问题</h1><h4 id="在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题"><a href="#在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题" class="headerlink" title="在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题"></a>在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题</h4><hr>
 <p>解决方法：</p>
 <p>在 MainActivity 类的 super.onCreate 方法后添加如下代码</p>
@@ -92,12 +74,16 @@
       </tags>
   </entry>
   <entry>
-    <title>flutter运行时卡住的解决办法</title>
-    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
-<p>解决方法：</p>
-<p>修改项目中<code>android/build.gradle</code>文件</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>从零开始搭建一个flutter项目</title>
+    <url>/2019/07/17/flutter/</url>
+    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
+<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
+<p>flutter packages get<br>配置镜像不然报错</p>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+]]></content>
       <categories>
         <category>移动端开发</category>
       </categories>
@@ -106,22 +92,8 @@
       </tags>
   </entry>
   <entry>
-    <title>git添加文件失败问题</title>
-    <url>/pqyBlog/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误"><a href="#当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误" class="headerlink" title="当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误"></a>当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">fatal: in unpopulated submodule &#x27;themes/next&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-先取消第三方的远程连接，然后执行以下命令即可解决"><a href="#1-先取消第三方的远程连接，然后执行以下命令即可解决" class="headerlink" title="1. 先取消第三方的远程连接，然后执行以下命令即可解决"></a>1. 先取消第三方的远程连接，然后执行以下命令即可解决</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rm -rf --cached .\next\(此为文件夹名称)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git add添加文件失败问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git add again remote</title>
-    <url>/pqyBlog/2023/01/10/git-add-again-remote/</url>
+    <url>/2023/01/10/git-add-again-remote/</url>
     <content><![CDATA[<h2 id="Git–断开与远程仓库的连接并连接新仓库"><a href="#Git–断开与远程仓库的连接并连接新仓库" class="headerlink" title="Git–断开与远程仓库的连接并连接新仓库"></a>Git–断开与远程仓库的连接并连接新仓库</h2><h2 id="1-查看远程连接"><a href="#1-查看远程连接" class="headerlink" title="1. 查看远程连接"></a>1. 查看远程连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
 
 <h2 id="2-取消与远程仓库的连接"><a href="#2-取消与远程仓库的连接" class="headerlink" title="2. 取消与远程仓库的连接"></a>2. 取消与远程仓库的连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
@@ -136,7 +108,7 @@
 
 <h3 id="“你的远程仓库地址”为新建的空仓库"><a href="#“你的远程仓库地址”为新建的空仓库" class="headerlink" title="“你的远程仓库地址”为新建的空仓库"></a><font color="red">“你的远程仓库地址”</font>为新建的空仓库</h3><h2 id="7-将项目推送到远程仓库"><a href="#7-将项目推送到远程仓库" class="headerlink" title="7. 将项目推送到远程仓库"></a>7. 将项目推送到远程仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 
-<h3 id="如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突"><a href="#如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突" class="headerlink" title="如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突"></a><font color="red">如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突</font></h3><img data-src="/pqyBlog/images/git/1.jpg" class="[class names]" title="[100%] [100%] " alt="title text">
+<h3 id="如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突"><a href="#如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突" class="headerlink" title="如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突"></a><font color="red">如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突</font></h3><img data-src="/images/git/1.jpg" class="[class names]" title="[100%] [100%] " alt="title text">
 
 <h3 id="输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决"><a href="#输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决" class="headerlink" title="输入git pull –rebase origin master将文件拉到本地后重新输入步骤7即可解决"></a>输入<em>git pull –rebase origin master</em>将文件拉到本地后重新输入步骤7即可解决</h3>]]></content>
       <categories>
@@ -147,11 +119,39 @@
       </tags>
   </entry>
   <entry>
+    <title>flutter运行时卡住的解决办法</title>
+    <url>/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
+<p>解决方法：</p>
+<p>修改项目中<code>android/build.gradle</code>文件</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>移动端开发</category>
+      </categories>
+      <tags>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git添加文件失败问题</title>
+    <url>/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误"><a href="#当我们项目中的某个模块为第三方拉取的，在我们git-add添加文件时会报如下错误" class="headerlink" title="当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误"></a>当我们项目中的某个模块为第三方拉取的，在我们git add添加文件时会报如下错误</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">fatal: in unpopulated submodule &#x27;themes/next&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-先取消第三方的远程连接，然后执行以下命令即可解决"><a href="#1-先取消第三方的远程连接，然后执行以下命令即可解决" class="headerlink" title="1. 先取消第三方的远程连接，然后执行以下命令即可解决"></a>1. 先取消第三方的远程连接，然后执行以下命令即可解决</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rm -rf --cached .\next\(此为文件夹名称)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git add添加文件失败问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git文件丢失问题</title>
-    <url>/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
+    <url>/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"><a href="#git项目初始化后没提交本地代码直接pull导致文件丢失问问题" class="headerlink" title="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"></a>git项目初始化后没提交本地代码直接pull导致文件丢失问问题</h1><h2 id="1-此时切勿慌张乱删文件"><a href="#1-此时切勿慌张乱删文件" class="headerlink" title="1. 此时切勿慌张乱删文件"></a>1. <font color="red">此时切勿慌张乱删文件</font></h2><h2 id="2-在命令行中进入项目目录输入以下命令查看你的git操作日志"><a href="#2-在命令行中进入项目目录输入以下命令查看你的git操作日志" class="headerlink" title="2. 在命令行中进入项目目录输入以下命令查看你的git操作日志"></a>2. 在命令行中进入项目目录输入以下命令查看你的git操作日志</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/pqyBlog/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
 
 <h2 id="4-复制commitId执行以下命令重置到pull之前的样子"><a href="#4-复制commitId执行以下命令重置到pull之前的样子" class="headerlink" title="4. 复制commitId执行以下命令重置到pull之前的样子"></a>4. 复制commitId执行以下命令重置到pull之前的样子</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset --hard (复制的commitId)</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -164,7 +164,7 @@
   </entry>
   <entry>
     <title>hexo 常用命令集合</title>
-    <url>/pqyBlog/2019/07/17/hexo/</url>
+    <url>/2019/07/17/hexo/</url>
     <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><blockquote><ol>
 <li>生成静态文件<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure> </li>
 <li>文件生成后立即部署到 deploy 配置里对应的网站<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure> </li>
@@ -186,7 +186,7 @@
   </entry>
   <entry>
     <title>mac上node版本和fsevents版本冲突</title>
-    <url>/pqyBlog/2023/01/01/mac%E4%B8%8Anode%E7%89%88%E6%9C%AC%E5%92%8Cfsevents%E7%89%88%E6%9C%AC%E5%86%B2%E7%AA%81/</url>
+    <url>/2023/01/01/mac%E4%B8%8Anode%E7%89%88%E6%9C%AC%E5%92%8Cfsevents%E7%89%88%E6%9C%AC%E5%86%B2%E7%AA%81/</url>
     <content><![CDATA[<h2 id="mac上node版本和fsevents版本"><a href="#mac上node版本和fsevents版本" class="headerlink" title="mac上node版本和fsevents版本"></a>mac上node版本和fsevents版本</h2><h4 id="当node升级到12-0版本以上在进行npm-install时会报错"><a href="#当node升级到12-0版本以上在进行npm-install时会报错" class="headerlink" title="当node升级到12.0版本以上在进行npm install时会报错"></a><strong>当node升级到12.0版本以上在进行npm install时会报错</strong></h4><h5 id="以下是错误日志："><a href="#以下是错误日志：" class="headerlink" title="以下是错误日志："></a>以下是错误日志：</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">../../../../nan/nan_converters_43_inl.h:22:1: warning: &#x27;ToBoolean&#x27; is deprecated: ToBoolean can never throw. Use Local version. [-Wdeprecated-declarations]</span><br><span class="line">X(Boolean)</span><br><span class="line">^</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:18:12: note: expanded from macro &#x27;X&#x27;</span><br><span class="line">      val-&gt;To ## TYPE(isolate-&gt;GetCurrentContext())                            \\\n           ^</span><br><span class="line">&lt;scratch space&gt;:201:1: note: expanded from here</span><br><span class="line">ToBoolean</span><br><span class="line">^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2523:3: note: &#x27;ToBoolean&#x27; has been explicitly marked deprecated here</span><br><span class="line">  V8_DEPRECATE_SOON(\&quot;ToBoolean can never throw. Use Local version.\&quot;,</span><br><span class="line">  ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8config.h:322:29: note: expanded from macro &#x27;V8_DEPRECATE_SOON&#x27;</span><br><span class="line">  declarator __attribute__((deprecated(message)))</span><br><span class="line">                            ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:221:</span><br><span class="line">In file included from ../../../../nan/nan_converters.h:67:</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:40:1: warning: &#x27;BooleanValue&#x27; is deprecated: BooleanValue can never throw. Use Isolate version. [-Wdeprecated-declarations]</span><br><span class="line">X(bool, Boolean)</span><br><span class="line">^</span><br><span class="line">../../../../nan/nan_converters_43_inl.h:37:15: note: expanded from macro &#x27;X&#x27;</span><br><span class="line">  return val-&gt;NAME ## Value(isolate-&gt;GetCurrentContext());                     \\\n              ^</span><br><span class="line">&lt;scratch space&gt;:208:1: note: expanded from here</span><br><span class="line">BooleanValue</span><br><span class="line">^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2561:3: note: &#x27;BooleanValue&#x27; has been explicitly marked deprecated here</span><br><span class="line">  V8_DEPRECATED(\&quot;BooleanValue can never throw. Use Isolate version.\&quot;,</span><br><span class="line">  ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8config.h:307:29: note: expanded from macro &#x27;V8_DEPRECATED&#x27;</span><br><span class="line">  declarator __attribute__((deprecated(message)))</span><br><span class="line">                            ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:103:42: error: no viable conversion from &#x27;v8::Isolate *&#x27; to &#x27;Local&lt;v8::Context&gt;&#x27;</span><br><span class="line">  return scope.Escape(v8::Function::New( isolate</span><br><span class="line">                                         ^~~~~~~</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:183:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from &#x27;v8::Isolate *&#x27; to &#x27;const v8::Local&lt;v8::Context&gt; &amp;&#x27; for 1st argument</span><br><span class="line">class Local &#123;</span><br><span class="line">      ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:183:7: note: candidate constructor (the implicit move constructor) not viable: no known conversion from &#x27;v8::Isolate *&#x27; to &#x27;v8::Local&lt;v8::Context&gt; &amp;&amp;&#x27; for 1st argument</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:187:13: note: candidate template ignored: could not match &#x27;Local&lt;type-parameter-0-0&gt;&#x27; against &#x27;v8::Isolate *&#x27;</span><br><span class="line">  V8_INLINE Local(Local&lt;S&gt; that)</span><br><span class="line">            ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:4126:22: note: passing argument to parameter &#x27;context&#x27; here</span><br><span class="line">      Local&lt;Context&gt; context, FunctionCallback callback,</span><br><span class="line">                     ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:37: error: too few arguments to function call, expected 2, have 1</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">         ~~~~~~~~~~~~~~~~~~~~~      ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:5380:3: note: &#x27;New&#x27; declared here</span><br><span class="line">  static Local&lt;Value&gt; New(Isolate* isolate, Local&lt;String&gt; value);</span><br><span class="line">  ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">In file included from ../../../../nan/nan.h:222:</span><br><span class="line">In file included from ../../../../nan/nan_new.h:189:</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:58: error: expected &#x27;(&#x27; for function-style cast or type construction</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">                                         ~~~~~~~~~~~~~~~~^</span><br><span class="line">../../../../nan/nan_implementation_12_inl.h:337:60: error: expected expression</span><br><span class="line">  return v8::StringObject::New(value).As&lt;v8::StringObject&gt;();</span><br><span class="line">                                                           ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">../../../../nan/nan.h:1063:44: error: no matching member function for call to &#x27;ToString&#x27;</span><br><span class="line">      v8::Local&lt;v8::String&gt; string = from-&gt;ToString();</span><br><span class="line">                                     ~~~~~~^~~~~~~~</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2528:44: note: candidate function not viable: requires single argument &#x27;context&#x27;, but no arguments were provided</span><br><span class="line">  V8_WARN_UNUSED_RESULT MaybeLocal&lt;String&gt; ToString(</span><br><span class="line">                                           ^</span><br><span class="line">/Users/rene/.node-gyp/12.1.0/include/node/v8.h:2544:35: note: candidate function not viable: requires single argument &#x27;isolate&#x27;, but no arguments were provided</span><br><span class="line">                    Local&lt;String&gt; ToString(Isolate* isolate) const);</span><br><span class="line">                                  ^</span><br><span class="line">In file included from ../fsevents.cc:6:</span><br><span class="line">...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <span id="more"></span>
 <h5 id="解决方法如下"><a href="#解决方法如下" class="headerlink" title="解决方法如下:"></a>解决方法如下:</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">删除node_moules文件夹</span><br><span class="line">删除package-lock.json文件</span><br><span class="line">安装最新版本的 fsevents:  npm i fsevents -D</span><br><span class="line">然后重新安装依赖 npm i</span><br></pre></td></tr></table></figure>
@@ -205,7 +205,7 @@
   </entry>
   <entry>
     <title>mysql8.0.17安装和配置</title>
-    <url>/pqyBlog/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <url>/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>去官网下载 mysql–&gt; <a href="https://dev.mysql.com/downloads/mysql/">下载地址</a></p>
 <h3 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h3><p>在解压后的根目录，需要做两步小操作</p>
 <ol>
@@ -245,7 +245,7 @@
   </entry>
   <entry>
     <title>npm常用命令</title>
-    <url>/pqyBlog/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <url>/2023/01/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="常用查询命令"><a href="#常用查询命令" class="headerlink" title="常用查询命令"></a>常用查询命令</h1><h2 id="1、安装模块"><a href="#1、安装模块" class="headerlink" title="1、安装模块"></a>1、安装模块</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install &lt;package&gt;   　　　　　　　　　　　　　　　              安装包，默认会安装最新的版本</span><br><span class="line">npm install &lt;package&gt;@&lt;version&gt;                             　　  安装指定版本</span><br><span class="line">npm install &lt;package&gt; --save 或 npm install &lt;package&gt; -S          安装包并将安装包信息将加入到dependencies（生产阶段的依赖）</span><br><span class="line">npm install &lt;package&gt; --save-dev 或 npm install &lt;package&gt; -D 　　　安装包并将安装包信息将加入到devDependencies（开发阶段的依赖），所以开发阶段一般使用它</span><br><span class="line">npm install &lt;package&gt; --save-optional 或 npm install &lt;package&gt; -O 安装包并将安装包信息将加入到optionalDependencies（可选阶段的依赖）</span><br><span class="line">npm install &lt;package&gt; --save-exact 或 npm install &lt;package&gt; -E    精确安装指定模块版本</span><br><span class="line">npm install gulp -g 或 npm install gulp --global                  全局安装包</span><br></pre></td></tr></table></figure>
 
 <h2 id="2、卸载模块"><a href="#2、卸载模块" class="headerlink" title="2、卸载模块"></a>2、卸载模块</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall &lt;package&gt; --save-dev 或 npm uninstall &lt;package&gt; -D       卸载开发版本的模块</span><br><span class="line">npm uninstall &lt;package&gt; --save 或 npm uninstall &lt;package&gt; -S 　　　　　　卸载生产版本的模块</span><br><span class="line">npm uninstall &lt;package&gt; --save-optional 或 npm uninstall &lt;package&gt; -O  卸载可选依赖版本的模块</span><br></pre></td></tr></table></figure>
@@ -284,7 +284,7 @@
   </entry>
   <entry>
     <title>npm-check-updates工具包的安装与使用</title>
-    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
+    <url>/2023/01/08/npm-check-updates/</url>
     <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
 
 <h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
@@ -303,8 +303,24 @@
       </tags>
   </entry>
   <entry>
+    <title>前端开发中常见问题合集</title>
+    <url>/2023/01/01/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="前端开发中常见问题合集"><a href="#前端开发中常见问题合集" class="headerlink" title="前端开发中常见问题合集"></a>前端开发中常见问题合集</h1><h3 id="1-使用better-scroll插件时的一些问题"><a href="#1-使用better-scroll插件时的一些问题" class="headerlink" title="1. 使用better-scroll插件时的一些问题"></a>1. 使用better-scroll插件时的一些问题</h3><ol>
+<li>使用<font face="宋体" color=#c7254e size=4><strong>scrollInit</strong></font>初始化滑动容器，然后异步请求接口数据时直接赋值容器不能滑动,这是因为scroll在初始化时列表数据为空导致滚动容器高度为0，请求完数据scroll组件并不知道，所以需要手动刷新容器</li>
+</ol>
+<h6 id="解决代码如下："><a href="#解决代码如下：" class="headerlink" title="解决代码如下："></a>解决代码如下：</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 异步加载的数据，手动刷新容器</span><br><span class="line">  var arr = await getData();</span><br><span class="line">  this.list = arr;</span><br><span class="line">  this.$nextTick(() =&gt; &#123;</span><br><span class="line">    this.scroll.refresh();</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<h5 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a><font face="宋体" color=#c7254e size=3><strong>注意！</strong></font></h5><p><strong>this.list为你遍历的列表数据，<br>this.scroll为你的滚动容器，<br>this.scroll.refresh();必须放在dom加载完在执行，此处已vue为例写在this.$nextTick的回调中</strong></p>
+]]></content>
+      <categories>
+        <category>前端开发</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nvm常用命令</title>
-    <url>/pqyBlog/2023/01/08/nvm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <url>/2023/01/08/nvm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h2 id="1、显示可下载版本的部分列表"><a href="#1、显示可下载版本的部分列表" class="headerlink" title="1、显示可下载版本的部分列表"></a>1、显示可下载版本的部分列表</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">nvm list available </span><br></pre></td></tr></table></figure>
 
 <h2 id="2、安装指定的版本的nodejs"><a href="#2、安装指定的版本的nodejs" class="headerlink" title="2、安装指定的版本的nodejs"></a>2、安装指定的版本的nodejs</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvm install xx.xx.xx </span><br></pre></td></tr></table></figure>
@@ -326,7 +342,7 @@
   </entry>
   <entry>
     <title>spug配置前端自动化发布</title>
-    <url>/pqyBlog/2023/01/01/spug%E9%85%8D%E7%BD%AE%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8F%91%E5%B8%83/</url>
+    <url>/2023/01/01/spug%E9%85%8D%E7%BD%AE%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8F%91%E5%B8%83/</url>
     <content><![CDATA[<h1 id="spug配置前端自动化发布"><a href="#spug配置前端自动化发布" class="headerlink" title="spug配置前端自动化发布"></a>spug配置前端自动化发布</h1><h3 id="1-先ssh连接服务器"><a href="#1-先ssh连接服务器" class="headerlink" title="1. 先ssh连接服务器"></a>1. 先ssh连接服务器</h3><figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">ssh root@服务器地址</span><br></pre></td></tr></table></figure>
 <h3 id="2-进入到登录用户系统目录下"><a href="#2-进入到登录用户系统目录下" class="headerlink" title="2. 进入到登录用户系统目录下"></a>2. 进入到登录用户系统目录下</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~</span><br></pre></td></tr></table></figure>
 <h3 id="3-创建一个名为spug的文件夹"><a href="#3-创建一个名为spug的文件夹" class="headerlink" title="3. 创建一个名为spug的文件夹"></a>3. 创建一个名为spug的文件夹</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir spug</span><br></pre></td></tr></table></figure>
@@ -339,11 +355,11 @@
 
 <h2 id="不出意外此时已经安装好spug了"><a href="#不出意外此时已经安装好spug了" class="headerlink" title="不出意外此时已经安装好spug了"></a>不出意外此时已经安装好spug了</h2><span id="more"></span>
 
-<h3 id="8-浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录"><a href="#8-浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录" class="headerlink" title="8. 浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录"></a>8. 浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录</h3><h2 id="此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述"><a href="#此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述" class="headerlink" title="此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述"></a><font color="red">此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述</font></h2><h3 id="9-应用配置"><a href="#9-应用配置" class="headerlink" title="9. 应用配置"></a>9. 应用配置</h3><h4 id="1-主机管理-gt-添加主机"><a href="#1-主机管理-gt-添加主机" class="headerlink" title="1.主机管理&gt;添加主机"></a>1.主机管理&gt;添加主机</h4><img data-src="/pqyBlog/images/spug/1.png" class="[class names]" title="[100%] [100%] " alt="title text">
-<h4 id="2-环境管理-gt-新建环境"><a href="#2-环境管理-gt-新建环境" class="headerlink" title="2.环境管理&gt;新建环境"></a>2.环境管理&gt;新建环境</h4><img data-src="/pqyBlog/images/spug/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
-<h4 id="3-发布配置-gt-新建应用-gt-新建发布-gt-常规发布"><a href="#3-发布配置-gt-新建应用-gt-新建发布-gt-常规发布" class="headerlink" title="3.发布配置&gt;新建应用&gt;新建发布&gt;常规发布"></a>3.发布配置&gt;新建应用&gt;新建发布&gt;常规发布</h4><img data-src="/pqyBlog/images/spug/3.png" class="[class names]" title="[100%] [100%] " alt="title text">
-<h4 id="4-配置发布信息"><a href="#4-配置发布信息" class="headerlink" title="4.配置发布信息"></a>4.配置发布信息</h4><img data-src="/pqyBlog/images/spug/4.png" class="[class names]" title="[100%] [100%] " alt="title text">
-<img data-src="/pqyBlog/images/spug/5.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<h3 id="8-浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录"><a href="#8-浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录" class="headerlink" title="8. 浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录"></a>8. 浏览器输入服务器ip地址加上面配置的端口号，用第7步设置的账户登录</h3><h2 id="此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述"><a href="#此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述" class="headerlink" title="此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述"></a><font color="red">此处有一个可能会有一个问题，浏览器输入服务器ip地址加上面配置的端口号会访问不到spug应用，这是因为服务器端口没打开，需要去服务器后台打开，比如阿里云的话就是在阿里云服务器后台去设置，此处不过多赘述</font></h2><h3 id="9-应用配置"><a href="#9-应用配置" class="headerlink" title="9. 应用配置"></a>9. 应用配置</h3><h4 id="1-主机管理-gt-添加主机"><a href="#1-主机管理-gt-添加主机" class="headerlink" title="1.主机管理&gt;添加主机"></a>1.主机管理&gt;添加主机</h4><img data-src="/images/spug/1.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<h4 id="2-环境管理-gt-新建环境"><a href="#2-环境管理-gt-新建环境" class="headerlink" title="2.环境管理&gt;新建环境"></a>2.环境管理&gt;新建环境</h4><img data-src="/images/spug/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<h4 id="3-发布配置-gt-新建应用-gt-新建发布-gt-常规发布"><a href="#3-发布配置-gt-新建应用-gt-新建发布-gt-常规发布" class="headerlink" title="3.发布配置&gt;新建应用&gt;新建发布&gt;常规发布"></a>3.发布配置&gt;新建应用&gt;新建发布&gt;常规发布</h4><img data-src="/images/spug/3.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<h4 id="4-配置发布信息"><a href="#4-配置发布信息" class="headerlink" title="4.配置发布信息"></a>4.配置发布信息</h4><img data-src="/images/spug/4.png" class="[class names]" title="[100%] [100%] " alt="title text">
+<img data-src="/images/spug/5.png" class="[class names]" title="[100%] [100%] " alt="title text">
 
 <h3 id="1-文件过滤规则"><a href="#1-文件过滤规则" class="headerlink" title="1.文件过滤规则"></a>1.文件过滤规则</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dist</span><br></pre></td></tr></table></figure>
 <h4 id="此处以前端vue项目为例子，因为项目build之后我们只需dist目录里的东西，所有只需要把包含dist的文件夹打包到目标主机"><a href="#此处以前端vue项目为例子，因为项目build之后我们只需dist目录里的东西，所有只需要把包含dist的文件夹打包到目标主机" class="headerlink" title="此处以前端vue项目为例子，因为项目build之后我们只需dist目录里的东西，所有只需要把包含dist的文件夹打包到目标主机"></a>此处以前端vue项目为例子，因为项目build之后我们只需dist目录里的东西，所有只需要把包含dist的文件夹打包到目标主机</h4><h3 id="2-代码检出前执行"><a href="#2-代码检出前执行" class="headerlink" title="2.代码检出前执行"></a>2.代码检出前执行</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;代码检出前路径&#x27; # 控制台输出语句</span><br><span class="line">env | grep SPUG # 打印spug的内置的全局变量</span><br><span class="line">pwd # 打印当前所在目录位置</span><br><span class="line">echo &#x27;创建公共node_modules目录&#x27;</span><br><span class="line">mkdir -p $SPUG_REPOS_DIR/$SPUG_DEPLOY_ID/node_modules  # 创建公共node_modules目录</span><br><span class="line">ls # 打印当前目录下的所有文件</span><br></pre></td></tr></table></figure>
@@ -361,22 +377,6 @@
       </categories>
       <tags>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端开发中常见问题合集</title>
-    <url>/pqyBlog/2023/01/01/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="前端开发中常见问题合集"><a href="#前端开发中常见问题合集" class="headerlink" title="前端开发中常见问题合集"></a>前端开发中常见问题合集</h1><h3 id="1-使用better-scroll插件时的一些问题"><a href="#1-使用better-scroll插件时的一些问题" class="headerlink" title="1. 使用better-scroll插件时的一些问题"></a>1. 使用better-scroll插件时的一些问题</h3><ol>
-<li>使用<font face="宋体" color=#c7254e size=4><strong>scrollInit</strong></font>初始化滑动容器，然后异步请求接口数据时直接赋值容器不能滑动,这是因为scroll在初始化时列表数据为空导致滚动容器高度为0，请求完数据scroll组件并不知道，所以需要手动刷新容器</li>
-</ol>
-<h6 id="解决代码如下："><a href="#解决代码如下：" class="headerlink" title="解决代码如下："></a>解决代码如下：</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 异步加载的数据，手动刷新容器</span><br><span class="line">  var arr = await getData();</span><br><span class="line">  this.list = arr;</span><br><span class="line">  this.$nextTick(() =&gt; &#123;</span><br><span class="line">    this.scroll.refresh();</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
-<h5 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a><font face="宋体" color=#c7254e size=3><strong>注意！</strong></font></h5><p><strong>this.list为你遍历的列表数据，<br>this.scroll为你的滚动容器，<br>this.scroll.refresh();必须放在dom加载完在执行，此处已vue为例写在this.$nextTick的回调中</strong></p>
-]]></content>
-      <categories>
-        <category>前端开发</category>
-      </categories>
-      <tags>
-        <tag>web</tag>
       </tags>
   </entry>
 </search>
