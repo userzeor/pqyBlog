@@ -1,83 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>edg浏览器中唤起ie调试工具</title>
-    <url>/pqyBlog/2023/02/22/edg%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%94%A4%E8%B5%B7ie%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h1 id="edg浏览器默认是关闭ie模式的我们的先去设置中打开-IE-模式"><a href="#edg浏览器默认是关闭ie模式的我们的先去设置中打开-IE-模式" class="headerlink" title="edg浏览器默认是关闭ie模式的我们的先去设置中打开 IE 模式"></a>edg浏览器默认是关闭ie模式的我们的先去设置中打开 IE 模式</h1><img data-src="/pqyBlog/images/edgBrowser/1.png" class="[class names]" title="[100%] [100%] " alt="title text">
-
-<h1 id="打开之后点击地址栏后的ie图标以-IE-模式打开当前网页"><a href="#打开之后点击地址栏后的ie图标以-IE-模式打开当前网页" class="headerlink" title="打开之后点击地址栏后的ie图标以 IE 模式打开当前网页"></a>打开之后点击地址栏后的ie图标以 IE 模式打开当前网页</h1><img data-src="/pqyBlog/images/edgBrowser/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
-
-<h1 id="在-IE-模式下的选项卡上打开开发工具"><a href="#在-IE-模式下的选项卡上打开开发工具" class="headerlink" title="在 IE 模式下的选项卡上打开开发工具"></a>在 IE 模式下的选项卡上打开开发工具</h1><ol>
-<li><p>在 Windows 中，打开“ 运行 ”对话框。 例如，按“Windows logo key + R”。</p>
-</li>
-<li><p>输入“%systemroot%\system32\f12\IEChooser.exe”，然后单击“确定”。</p>
-</li>
-<li><p>在 IEChooser 中，选择“IE 模式”选项卡的条目。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>ie兼容</category>
-      </categories>
-      <tags>
-        <tag>ie</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dart学习笔记</title>
-    <url>/pqyBlog/2020/09/05/dart%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="类型检测操作符"><a href="#类型检测操作符" class="headerlink" title="类型检测操作符"></a>类型检测操作符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>as</td>
-<td>定型</td>
-</tr>
-<tr>
-<td>is</td>
-<td>如果对象具有指定的类型，则为 True</td>
-</tr>
-<tr>
-<td>is!</td>
-<td>如果对象具有指定的类型，则为 False</td>
-</tr>
-</tbody></table>
-<p>使用 as 操作符将对象转换为特定类型。通常，您应该使用它作为在对象上进行 is 测试的简写，后面是使用该对象的表达式。例如，考虑以下代码:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (eat <span class="keyword">is</span> Person) &#123;</span><br><span class="line">  <span class="comment">// Type check</span></span><br><span class="line">  eat.food = <span class="string">&#x27;apple&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>您可以使用 as 运算符使代码更短:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">(eat <span class="keyword">as</span> Person).food = <span class="string">&#x27;apple&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>注意:以上代码不相等。如果 eat 为空或不为 Person，第一个示例(带 is)什么也不做;第二个(带有 as)抛出异常。</p>
-<h2 id="赋值操作符"><a href="#赋值操作符" class="headerlink" title="赋值操作符"></a>赋值操作符</h2><p>正如您已经看到的，可以使用&#x3D;操作符赋值。如果指定的变量为空，则使用??&#x3D;运算符。</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 赋值给a</span></span><br><span class="line">a = value;</span><br><span class="line"><span class="comment">// 如果b为空，则赋值给b;否则，b保持不变</span></span><br><span class="line">b ??= value;</span><br></pre></td></tr></table></figure>
-
-<h2 id="级联符号"><a href="#级联符号" class="headerlink" title="级联符号(..)"></a>级联符号(..)</h2><p>级联(..)允许对同一对象进行一系列操作。除了函数调用外，您还可以访问同一对象上的字段。这通常可以省去创建临时变量的步骤，并允许您编写更流畅的代码。<br>考虑以下代码:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="built_in">querySelector</span>(<span class="string">&#x27;#confirm&#x27;</span>) <span class="comment">// Get an object.</span></span><br><span class="line">  ..text = <span class="string">&#x27;Confirm&#x27;</span> <span class="comment">// Use its members.</span></span><br><span class="line">  ..classes.add(<span class="string">&#x27;important&#x27;</span>)</span><br><span class="line">  ..onClick.listen((e) =&gt; <span class="built_in">window</span>.alert(<span class="string">&#x27;Confirmed!&#x27;</span>));</span><br></pre></td></tr></table></figure>
-
-<p>第一个方法调用 querySelector()返回选择器对象。级联表示法后面的代码操作这个选择器对象，忽略可能返回的任何后续值。上例等价于:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> button = <span class="built_in">querySelector</span>(<span class="string">&#x27;#confirm&#x27;</span>);</span><br><span class="line">button.text = <span class="string">&#x27;Confirm&#x27;</span>;</span><br><span class="line">button.classes.add(<span class="string">&#x27;important&#x27;</span>);</span><br><span class="line">button.onClick.listen((e) =&gt; <span class="built_in">window</span>.alert(<span class="string">&#x27;Confirmed!&#x27;</span>));</span><br></pre></td></tr></table></figure>
-
-<p>你也可以嵌套你的级联。例如:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">final</span> addressBook = (AddressBookBuilder()</span><br><span class="line">      ..name = <span class="string">&#x27;jenny&#x27;</span></span><br><span class="line">      ..email = <span class="string">&#x27;jenny@example.com&#x27;</span></span><br><span class="line">      ..phone = (PhoneNumberBuilder()</span><br><span class="line">            ..number = <span class="string">&#x27;415-555-0100&#x27;</span></span><br><span class="line">            ..label = <span class="string">&#x27;home&#x27;</span>)</span><br><span class="line">          .build())</span><br><span class="line">    .build();</span><br></pre></td></tr></table></figure>
-
-<p>要小心在返回实际对象的函数上构造级联。例如，以下代码失败:</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sb = <span class="built_in">StringBuffer</span>();</span><br><span class="line">sb.write(<span class="string">&#x27;foo&#x27;</span>)</span><br><span class="line">  ..write(<span class="string">&#x27;bar&#x27;</span>); <span class="comment">// Error: method &#x27;write&#x27; isn&#x27;t defined for &#x27;void&#x27;.</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>调用 sb.write()返回 void，并且不能在 void 上构造级联。<br>注意:严格地说，级联的“双点”符号不是运算符。这只是 Dart 语法的一部分。</strong></p>
-]]></content>
-      <categories>
-        <category>移动端开发</category>
-      </categories>
-      <tags>
-        <tag>dart</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TypeScript数据类型介绍(一)</title>
     <url>/pqyBlog/2023/02/25/TypeScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BB%8B%E7%BB%8D-%E4%B8%80/</url>
     <content><![CDATA[<h1 id="众所周知-TypeScript-是-js-的超集，所以-js-的基本数据类型-ts-都包含在内，考考大家-js-的数据类型有哪些？"><a href="#众所周知-TypeScript-是-js-的超集，所以-js-的基本数据类型-ts-都包含在内，考考大家-js-的数据类型有哪些？" class="headerlink" title="众所周知 TypeScript 是 js 的超集，所以 js 的基本数据类型 ts 都包含在内，考考大家 js 的数据类型有哪些？"></a>众所周知 TypeScript 是 js 的超集，所以 js 的基本数据类型 ts 都包含在内，考考大家 js 的数据类型有哪些？</h1><h2 id="我们知道-js-的数据类型分为基本数据类型和引用数据类型，下面先介绍基本数据类型"><a href="#我们知道-js-的数据类型分为基本数据类型和引用数据类型，下面先介绍基本数据类型" class="headerlink" title="我们知道 js 的数据类型分为基本数据类型和引用数据类型，下面先介绍基本数据类型"></a>我们知道 js 的数据类型分为基本数据类型和引用数据类型，下面先介绍基本数据类型</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串(String)"></a>字符串(String)</h4><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="attr">testTxt</span>: <span class="title class_">String</span> = <span class="string">&quot;ie真是神奇的浏览器&quot;</span>;</span><br><span class="line"><span class="comment">//也可以使用es6的字符串模板</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">str</span>: <span class="built_in">string</span> = <span class="string">`dddd<span class="subst">$&#123;testTxt&#125;</span>`</span>;</span><br></pre></td></tr></table></figure>
@@ -136,6 +59,60 @@
       </tags>
   </entry>
   <entry>
+    <title>dart学习笔记</title>
+    <url>/pqyBlog/2020/09/05/dart%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="类型检测操作符"><a href="#类型检测操作符" class="headerlink" title="类型检测操作符"></a>类型检测操作符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>as</td>
+<td>定型</td>
+</tr>
+<tr>
+<td>is</td>
+<td>如果对象具有指定的类型，则为 True</td>
+</tr>
+<tr>
+<td>is!</td>
+<td>如果对象具有指定的类型，则为 False</td>
+</tr>
+</tbody></table>
+<p>使用 as 操作符将对象转换为特定类型。通常，您应该使用它作为在对象上进行 is 测试的简写，后面是使用该对象的表达式。例如，考虑以下代码:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (eat <span class="keyword">is</span> Person) &#123;</span><br><span class="line">  <span class="comment">// Type check</span></span><br><span class="line">  eat.food = <span class="string">&#x27;apple&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>您可以使用 as 运算符使代码更短:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">(eat <span class="keyword">as</span> Person).food = <span class="string">&#x27;apple&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>注意:以上代码不相等。如果 eat 为空或不为 Person，第一个示例(带 is)什么也不做;第二个(带有 as)抛出异常。</p>
+<h2 id="赋值操作符"><a href="#赋值操作符" class="headerlink" title="赋值操作符"></a>赋值操作符</h2><p>正如您已经看到的，可以使用&#x3D;操作符赋值。如果指定的变量为空，则使用??&#x3D;运算符。</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 赋值给a</span></span><br><span class="line">a = value;</span><br><span class="line"><span class="comment">// 如果b为空，则赋值给b;否则，b保持不变</span></span><br><span class="line">b ??= value;</span><br></pre></td></tr></table></figure>
+
+<h2 id="级联符号"><a href="#级联符号" class="headerlink" title="级联符号(..)"></a>级联符号(..)</h2><p>级联(..)允许对同一对象进行一系列操作。除了函数调用外，您还可以访问同一对象上的字段。这通常可以省去创建临时变量的步骤，并允许您编写更流畅的代码。<br>考虑以下代码:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="built_in">querySelector</span>(<span class="string">&#x27;#confirm&#x27;</span>) <span class="comment">// Get an object.</span></span><br><span class="line">  ..text = <span class="string">&#x27;Confirm&#x27;</span> <span class="comment">// Use its members.</span></span><br><span class="line">  ..classes.add(<span class="string">&#x27;important&#x27;</span>)</span><br><span class="line">  ..onClick.listen((e) =&gt; <span class="built_in">window</span>.alert(<span class="string">&#x27;Confirmed!&#x27;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>第一个方法调用 querySelector()返回选择器对象。级联表示法后面的代码操作这个选择器对象，忽略可能返回的任何后续值。上例等价于:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> button = <span class="built_in">querySelector</span>(<span class="string">&#x27;#confirm&#x27;</span>);</span><br><span class="line">button.text = <span class="string">&#x27;Confirm&#x27;</span>;</span><br><span class="line">button.classes.add(<span class="string">&#x27;important&#x27;</span>);</span><br><span class="line">button.onClick.listen((e) =&gt; <span class="built_in">window</span>.alert(<span class="string">&#x27;Confirmed!&#x27;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>你也可以嵌套你的级联。例如:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">final</span> addressBook = (AddressBookBuilder()</span><br><span class="line">      ..name = <span class="string">&#x27;jenny&#x27;</span></span><br><span class="line">      ..email = <span class="string">&#x27;jenny@example.com&#x27;</span></span><br><span class="line">      ..phone = (PhoneNumberBuilder()</span><br><span class="line">            ..number = <span class="string">&#x27;415-555-0100&#x27;</span></span><br><span class="line">            ..label = <span class="string">&#x27;home&#x27;</span>)</span><br><span class="line">          .build())</span><br><span class="line">    .build();</span><br></pre></td></tr></table></figure>
+
+<p>要小心在返回实际对象的函数上构造级联。例如，以下代码失败:</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sb = <span class="built_in">StringBuffer</span>();</span><br><span class="line">sb.write(<span class="string">&#x27;foo&#x27;</span>)</span><br><span class="line">  ..write(<span class="string">&#x27;bar&#x27;</span>); <span class="comment">// Error: method &#x27;write&#x27; isn&#x27;t defined for &#x27;void&#x27;.</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>调用 sb.write()返回 void，并且不能在 void 上构造级联。<br>注意:严格地说，级联的“双点”符号不是运算符。这只是 Dart 语法的一部分。</strong></p>
+]]></content>
+      <categories>
+        <category>移动端开发</category>
+      </categories>
+      <tags>
+        <tag>dart</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>docker部署多个网站</title>
     <url>/pqyBlog/2023/07/04/docker%E9%83%A8%E7%BD%B2%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="docker部署多个网站"><a href="#docker部署多个网站" class="headerlink" title="docker部署多个网站"></a>docker部署多个网站</h1><p><span style="fontSize: 16px;">此处通过新启动一个docker的nginx容器通过端口号来映射实现</span></p>
@@ -177,12 +154,39 @@
 ]]></content>
   </entry>
   <entry>
-    <title>flutter运行时卡住的解决办法</title>
-    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
-<p>解决方法：</p>
-<p>修改项目中<code>android/build.gradle</code>文件</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>edg浏览器中唤起ie调试工具</title>
+    <url>/pqyBlog/2023/02/22/edg%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%94%A4%E8%B5%B7ie%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="edg浏览器默认是关闭ie模式的我们的先去设置中打开-IE-模式"><a href="#edg浏览器默认是关闭ie模式的我们的先去设置中打开-IE-模式" class="headerlink" title="edg浏览器默认是关闭ie模式的我们的先去设置中打开 IE 模式"></a>edg浏览器默认是关闭ie模式的我们的先去设置中打开 IE 模式</h1><img data-src="/pqyBlog/images/edgBrowser/1.png" class="[class names]" title="[100%] [100%] " alt="title text">
+
+<h1 id="打开之后点击地址栏后的ie图标以-IE-模式打开当前网页"><a href="#打开之后点击地址栏后的ie图标以-IE-模式打开当前网页" class="headerlink" title="打开之后点击地址栏后的ie图标以 IE 模式打开当前网页"></a>打开之后点击地址栏后的ie图标以 IE 模式打开当前网页</h1><img data-src="/pqyBlog/images/edgBrowser/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
+
+<h1 id="在-IE-模式下的选项卡上打开开发工具"><a href="#在-IE-模式下的选项卡上打开开发工具" class="headerlink" title="在 IE 模式下的选项卡上打开开发工具"></a>在 IE 模式下的选项卡上打开开发工具</h1><ol>
+<li><p>在 Windows 中，打开“ 运行 ”对话框。 例如，按“Windows logo key + R”。</p>
+</li>
+<li><p>输入“%systemroot%\system32\f12\IEChooser.exe”，然后单击“确定”。</p>
+</li>
+<li><p>在 IEChooser 中，选择“IE 模式”选项卡的条目。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>ie兼容</category>
+      </categories>
+      <tags>
+        <tag>ie</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从零开始搭建一个flutter项目</title>
+    <url>/pqyBlog/2019/07/17/flutter/</url>
+    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
+<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
+<p>flutter packages get<br>配置镜像不然报错</p>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+]]></content>
       <categories>
         <category>移动端开发</category>
       </categories>
@@ -210,16 +214,55 @@
       </tags>
   </entry>
   <entry>
-    <title>从零开始搭建一个flutter项目</title>
-    <url>/pqyBlog/2019/07/17/flutter/</url>
-    <content><![CDATA[<blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
-<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+    <title>git文件丢失问题</title>
+    <url>/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"><a href="#git项目初始化后没提交本地代码直接pull导致文件丢失问问题" class="headerlink" title="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"></a>git项目初始化后没提交本地代码直接pull导致文件丢失问问题</h1><h2 id="1-此时切勿慌张乱删文件"><a href="#1-此时切勿慌张乱删文件" class="headerlink" title="1. 此时切勿慌张乱删文件"></a>1. <font color="red">此时切勿慌张乱删文件</font></h2><h2 id="2-在命令行中进入项目目录输入以下命令查看你的git操作日志"><a href="#2-在命令行中进入项目目录输入以下命令查看你的git操作日志" class="headerlink" title="2. 在命令行中进入项目目录输入以下命令查看你的git操作日志"></a>2. 在命令行中进入项目目录输入以下命令查看你的git操作日志</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
 
-<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
-<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
-<p>flutter packages get<br>配置镜像不然报错</p>
-<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/pqyBlog/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
+
+<h2 id="4-复制commitId执行以下命令重置到pull之前的样子"><a href="#4-复制commitId执行以下命令重置到pull之前的样子" class="headerlink" title="4. 复制commitId执行以下命令重置到pull之前的样子"></a>4. 复制commitId执行以下命令重置到pull之前的样子</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset --hard (复制的commitId)</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git文件丢失问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git add again remote</title>
+    <url>/pqyBlog/2023/01/10/git-add-again-remote/</url>
+    <content><![CDATA[<h2 id="Git–断开与远程仓库的连接并连接新仓库"><a href="#Git–断开与远程仓库的连接并连接新仓库" class="headerlink" title="Git–断开与远程仓库的连接并连接新仓库"></a>Git–断开与远程仓库的连接并连接新仓库</h2><h2 id="1-查看远程连接"><a href="#1-查看远程连接" class="headerlink" title="1. 查看远程连接"></a>1. 查看远程连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-取消与远程仓库的连接"><a href="#2-取消与远程仓库的连接" class="headerlink" title="2. 取消与远程仓库的连接"></a>2. 取消与远程仓库的连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-初始化仓库"><a href="#3-初始化仓库" class="headerlink" title="3. 初始化仓库"></a>3. 初始化仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-添加所有文件"><a href="#4-添加所有文件" class="headerlink" title="4. 添加所有文件"></a>4. 添加所有文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-提交所有文件到本地仓库"><a href="#5-提交所有文件到本地仓库" class="headerlink" title="5. 提交所有文件到本地仓库"></a>5. 提交所有文件到本地仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git commit -m &#x27;备注信息&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-连接到远程仓库"><a href="#6-连接到远程仓库" class="headerlink" title="6. 连接到远程仓库"></a>6. 连接到远程仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin 你的远程仓库地址</span><br></pre></td></tr></table></figure>
+
+<h3 id="“你的远程仓库地址”为新建的空仓库"><a href="#“你的远程仓库地址”为新建的空仓库" class="headerlink" title="“你的远程仓库地址”为新建的空仓库"></a><font color="red">“你的远程仓库地址”</font>为新建的空仓库</h3><h2 id="7-将项目推送到远程仓库"><a href="#7-将项目推送到远程仓库" class="headerlink" title="7. 将项目推送到远程仓库"></a>7. 将项目推送到远程仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h3 id="如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突"><a href="#如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突" class="headerlink" title="如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突"></a><font color="red">如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突</font></h3><img data-src="/pqyBlog/images/git/1.jpg" class="[class names]" title="[100%] [100%] " alt="title text">
+
+<h3 id="输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决"><a href="#输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决" class="headerlink" title="输入git pull –rebase origin master将文件拉到本地后重新输入步骤7即可解决"></a>输入<em>git pull –rebase origin master</em>将文件拉到本地后重新输入步骤7即可解决</h3>]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git重新指定远程仓库连接</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>flutter运行时卡住的解决办法</title>
+    <url>/pqyBlog/2022/03/12/flutter%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8D%A1%E4%BD%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="flutter运行时卡住的解决办法"><a href="#flutter运行时卡住的解决办法" class="headerlink" title="flutter运行时卡住的解决办法"></a>flutter运行时卡住的解决办法</h1><h4 id="flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。"><a href="#flutter-run-运行时会卡在Running-‘gradle-assembleDebug-因为Gradle的Maven仓库在国外-我们可以使用阿里云的镜像地址。" class="headerlink" title="flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。"></a>flutter run 运行时会卡在Running ‘gradle assembleDebug, 因为Gradle的Maven仓库在国外, 我们可以使用阿里云的镜像地址。</h4><hr>
+<p>解决方法：</p>
+<p>修改项目中<code>android/build.gradle</code>文件</p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    ext.kotlin_version = <span class="string">&#x27;1.6.10&#x27;</span></span><br><span class="line">    repositories &#123;</span><br><span class="line">        <span class="comment">// 修改注释的地方换成下面阿里云的镜像地址便可解决问题</span></span><br><span class="line">        <span class="comment">// google()</span></span><br><span class="line">        <span class="comment">// mavenCentral()</span></span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/google&#x27;</span> &#125;</span><br><span class="line">        maven &#123; url <span class="string">&#x27;https://maven.aliyun.com/repository/jcenter&#x27;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">&#x27;com.android.tools.build:gradle:4.1.0&#x27;</span></span><br><span class="line">        classpath <span class="string">&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:<span class="subst">$kotlin_version</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>移动端开发</category>
       </categories>
@@ -324,49 +367,6 @@ TD: 默认方向，从上到下 -->
       </tags>
   </entry>
   <entry>
-    <title>git文件丢失问题</title>
-    <url>/pqyBlog/2023/01/14/git%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"><a href="#git项目初始化后没提交本地代码直接pull导致文件丢失问问题" class="headerlink" title="git项目初始化后没提交本地代码直接pull导致文件丢失问问题"></a>git项目初始化后没提交本地代码直接pull导致文件丢失问问题</h1><h2 id="1-此时切勿慌张乱删文件"><a href="#1-此时切勿慌张乱删文件" class="headerlink" title="1. 此时切勿慌张乱删文件"></a>1. <font color="red">此时切勿慌张乱删文件</font></h2><h2 id="2-在命令行中进入项目目录输入以下命令查看你的git操作日志"><a href="#2-在命令行中进入项目目录输入以下命令查看你的git操作日志" class="headerlink" title="2. 在命令行中进入项目目录输入以下命令查看你的git操作日志"></a>2. 在命令行中进入项目目录输入以下命令查看你的git操作日志</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"><a href="#3-命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id" class="headerlink" title="3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id"></a>3. 命令执行完出现类似下图结果，根据提交时的备注找到pull之前的git记录找到图片上的黄色字体的id</h2><img data-src="/pqyBlog/images/git/2.png" class="[class names]" title="[100%] [100%] " alt="title text">
-
-<h2 id="4-复制commitId执行以下命令重置到pull之前的样子"><a href="#4-复制commitId执行以下命令重置到pull之前的样子" class="headerlink" title="4. 复制commitId执行以下命令重置到pull之前的样子"></a>4. 复制commitId执行以下命令重置到pull之前的样子</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset --hard (复制的commitId)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git文件丢失问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git add again remote</title>
-    <url>/pqyBlog/2023/01/10/git-add-again-remote/</url>
-    <content><![CDATA[<h2 id="Git–断开与远程仓库的连接并连接新仓库"><a href="#Git–断开与远程仓库的连接并连接新仓库" class="headerlink" title="Git–断开与远程仓库的连接并连接新仓库"></a>Git–断开与远程仓库的连接并连接新仓库</h2><h2 id="1-查看远程连接"><a href="#1-查看远程连接" class="headerlink" title="1. 查看远程连接"></a>1. 查看远程连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-取消与远程仓库的连接"><a href="#2-取消与远程仓库的连接" class="headerlink" title="2. 取消与远程仓库的连接"></a>2. 取消与远程仓库的连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-初始化仓库"><a href="#3-初始化仓库" class="headerlink" title="3. 初始化仓库"></a>3. 初始化仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-添加所有文件"><a href="#4-添加所有文件" class="headerlink" title="4. 添加所有文件"></a>4. 添加所有文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-提交所有文件到本地仓库"><a href="#5-提交所有文件到本地仓库" class="headerlink" title="5. 提交所有文件到本地仓库"></a>5. 提交所有文件到本地仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git commit -m &#x27;备注信息&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-连接到远程仓库"><a href="#6-连接到远程仓库" class="headerlink" title="6. 连接到远程仓库"></a>6. 连接到远程仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin 你的远程仓库地址</span><br></pre></td></tr></table></figure>
-
-<h3 id="“你的远程仓库地址”为新建的空仓库"><a href="#“你的远程仓库地址”为新建的空仓库" class="headerlink" title="“你的远程仓库地址”为新建的空仓库"></a><font color="red">“你的远程仓库地址”</font>为新建的空仓库</h3><h2 id="7-将项目推送到远程仓库"><a href="#7-将项目推送到远程仓库" class="headerlink" title="7. 将项目推送到远程仓库"></a>7. 将项目推送到远程仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<h3 id="如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突"><a href="#如果出现下面错误可能是因为远程仓库原有的README-md或者-gitignore等文件没有pull到本地仓库而导致的冲突" class="headerlink" title="如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突"></a><font color="red">如果出现下面错误可能是因为远程仓库原有的README.md或者.gitignore等文件没有pull到本地仓库而导致的冲突</font></h3><img data-src="/pqyBlog/images/git/1.jpg" class="[class names]" title="[100%] [100%] " alt="title text">
-
-<h3 id="输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决"><a href="#输入git-pull-–rebase-origin-master将文件拉到本地后重新输入步骤7即可解决" class="headerlink" title="输入git pull –rebase origin master将文件拉到本地后重新输入步骤7即可解决"></a>输入<em>git pull –rebase origin master</em>将文件拉到本地后重新输入步骤7即可解决</h3>]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git重新指定远程仓库连接</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git添加文件失败问题</title>
     <url>/pqyBlog/2023/01/14/git%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="当我们项目中的某个模块为第三方拉取的，在我们-git-add-添加文件时会报如下错误"><a href="#当我们项目中的某个模块为第三方拉取的，在我们-git-add-添加文件时会报如下错误" class="headerlink" title="当我们项目中的某个模块为第三方拉取的，在我们 git add 添加文件时会报如下错误"></a>当我们项目中的某个模块为第三方拉取的，在我们 git add 添加文件时会报如下错误</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">fatal: in unpopulated submodule &#x27;themes/next&#x27;</span><br></pre></td></tr></table></figure>
@@ -381,6 +381,15 @@ TD: 默认方向，从上到下 -->
       </tags>
   </entry>
   <entry>
+    <title>git自动化更新合并代码</title>
+    <url>/pqyBlog/2023/07/04/git%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9B%B4%E6%96%B0%E5%90%88%E5%B9%B6%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码"><a href="#我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码" class="headerlink" title="我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码"></a>我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码</h1><h1 id="第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目"><a href="#第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目" class="headerlink" title="第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目"></a>第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">@echo off &amp; setlocal EnableDelayedExpansion</span><br><span class="line">set obj[0]=http://pengqianyi/r/pdf.git</span><br><span class="line">set obj[1]=http://pengqianyi/r/pharstation-gui-api.git</span><br><span class="line">set obj[2]=http://pengqianyi/r/pharstation-gui-base.git</span><br><span class="line">set obj[3]=http://pengqianyi/r/pharstation-gui-module-admin.git</span><br><span class="line">set obj[4]=http://pengqianyi/r/pharstation-gui-module-consumption.git</span><br><span class="line">set obj[5]=http://pengqianyi/r/pharstation-gui-module-education.git</span><br><span class="line">set obj[6]=http://pengqianyi/r/pharstation-gui-module-home.git</span><br><span class="line">set obj[7]=http://pengqianyi/r/pharstation-gui-module-knowledgebase.git</span><br><span class="line">set obj[8]=http://pengqianyi/r/pharstation-gui-module-login.git</span><br><span class="line">set obj[9]=http://pengqianyi/r/pharstation-gui-module-main.git</span><br><span class="line">set obj[10]=http://pengqianyi/r/pharstation-gui-module-outpatient.git</span><br><span class="line">set obj[11]=http://pengqianyi/r/pharstation-gui-module-patient.git</span><br><span class="line">set obj[12]=http://pengqianyi/r/pharstation-gui-module-regulatoryreporting.git</span><br><span class="line">set obj[13]=http://pengqianyi/r/pharstation-gui-module-rxreview.git</span><br><span class="line">set obj[14]=http://pengqianyi/r/pharstation-gui-module-selectivereview.git</span><br><span class="line">set obj[15]=http://pengqianyi/r/pharstation-gui-module-statistics.git</span><br><span class="line">set obj[16]=http://pengqianyi/r/pharstation-gui-module-sysadmin.git</span><br><span class="line">set obj[17]=http://pengqianyi/r/pharstation-gui-module-tdm.git</span><br><span class="line">set obj[18]=http://pengqianyi/r/pharstation-gui-module-ureport.git</span><br><span class="line">set obj[19]=http://pengqianyi/r/pharstation-gui-tools.git</span><br><span class="line">set obj[20]=http://pengqianyi/r/pharstation-gui.git</span><br><span class="line">set obj[21]=http://pengqianyi/r/sde.git</span><br><span class="line">set obj[22]=http://pengqianyi/r/sunya-editor.git</span><br><span class="line">set obj[23]=http://pengqianyi/r/xlsx-style.git</span><br><span class="line"></span><br><span class="line">set objCurrent=0</span><br><span class="line"> </span><br><span class="line">for %%a in (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23) do (</span><br><span class="line">    for /f &quot;usebackq delims== tokens=1-2&quot; %%i in (`set obj[%%a]`) do (</span><br><span class="line">        @REM echo 第一个=%%i</span><br><span class="line">        @REM echo 第二个=%%j</span><br><span class="line">        @REM set objCurrent=%%j</span><br><span class="line">        git clone %%j</span><br><span class="line">    )</span><br><span class="line">    @REM echo objCurrent=!objCurrent!</span><br><span class="line"> </span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
+<h1 id="此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下"><a href="#此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下" class="headerlink" title="此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下"></a>此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">SETLOCAL ENABLEDELAYEDEXPANSION</span><br><span class="line"></span><br><span class="line">echo 输入的最小提交天数为%1</span><br><span class="line"></span><br><span class="line">set &quot;$=%temp%\Spring&quot;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">%$% Echo WScript.Echo(Date.parse(new Date())/1000)</span></span><br><span class="line"></span><br><span class="line">for /f %%a in (&#x27;cscript -nologo -e:jscript %$%&#x27;) do set timestamp=%%a</span><br><span class="line"></span><br><span class="line">del /f /q %$%</span><br><span class="line"></span><br><span class="line">for /d %%a in (*) do (</span><br><span class="line">  echo  [31m</span><br><span class="line">  echo %%a</span><br><span class="line">  echo  [37m</span><br><span class="line">  cd %%a</span><br><span class="line">  git pull</span><br><span class="line">  git checkout develop</span><br><span class="line">  git branch</span><br><span class="line"></span><br><span class="line">  for /f &quot;tokens=*&quot; %%i in (&#x27;git log origin/develop --pretty^=format:&quot;%%cd&quot; --date=relative -1&#x27;) do (</span><br><span class="line">      ::echo %date:~0,10% %hour%:%Time:~3,2%:%Time:~6,2%</span><br><span class="line">	set pushTime=%%i</span><br><span class="line">      echo  [36m</span><br><span class="line">	echo !pushTime!</span><br><span class="line">      echo  [37m</span><br><span class="line">  )</span><br><span class="line">  </span><br><span class="line">  for /f &quot;tokens=*&quot; %%j in (&#x27;git log origin/develop --pretty^=format:&quot;%%cd&quot; --date=format:&quot;%%s&quot; -1&#x27;) do (</span><br><span class="line">      set gitTime=%%j</span><br><span class="line"></span><br><span class="line">      set curTime=%timestamp%</span><br><span class="line"></span><br><span class="line">      echo !gitTime!</span><br><span class="line"></span><br><span class="line">	echo !curTime!</span><br><span class="line"></span><br><span class="line">	set /a res=^(!curTime! - !gitTime!^) / ^(60 * 60 * 24^)</span><br><span class="line">	</span><br><span class="line">	echo  [35m</span><br><span class="line">	echo !res!天</span><br><span class="line">      echo  [37m</span><br><span class="line"></span><br><span class="line">      if !res! LSS %1 (</span><br><span class="line">	  ::小于提交的最小天数需要提交推送代码</span><br><span class="line">        echo 触发提交推送</span><br><span class="line">        git checkout master</span><br><span class="line">        git merge develop</span><br><span class="line">        git pull</span><br><span class="line">	  git push</span><br><span class="line">        git checkout develop</span><br><span class="line">      ) else (</span><br><span class="line">        echo 不触发提交推送</span><br><span class="line">      )</span><br><span class="line"></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  cd ../</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
+<h1 id="此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助"><a href="#此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助" class="headerlink" title="此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助"></a>此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助</h1>]]></content>
+  </entry>
+  <entry>
     <title>英雄联盟(lol)</title>
     <url>/pqyBlog/2019/06/29/lol/</url>
     <content><![CDATA[<h1 id="《英雄联盟》（League-of-Legends，简称LOL）是由美国拳头游戏（Riot-Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。"><a href="#《英雄联盟》（League-of-Legends，简称LOL）是由美国拳头游戏（Riot-Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。" class="headerlink" title="《英雄联盟》（League of Legends，简称LOL）是由美国拳头游戏（Riot Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。"></a>《英雄联盟》（League of Legends，简称LOL）是由美国拳头游戏（Riot Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。</h1>]]></content>
@@ -390,15 +399,6 @@ TD: 默认方向，从上到下 -->
       <tags>
         <tag>lol</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>git自动化更新合并代码</title>
-    <url>/pqyBlog/2023/07/04/git%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9B%B4%E6%96%B0%E5%90%88%E5%B9%B6%E4%BB%A3%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码"><a href="#我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码" class="headerlink" title="我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码"></a>我们在工作中可能会遇到有多个项目需要去更新代码合并代码的操作，如果一个个去操作的话会比较浪费时间，此处提供一个自动化合并的脚本去实现多个项目自动合并代码</h1><h1 id="第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目"><a href="#第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目" class="headerlink" title="第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目"></a>第一步先把多个项目都拉下来，此处也提供一个自动化拉取所有项目</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">@echo off &amp; setlocal EnableDelayedExpansion</span><br><span class="line">set obj[0]=http://pengqianyi/r/pdf.git</span><br><span class="line">set obj[1]=http://pengqianyi/r/pharstation-gui-api.git</span><br><span class="line">set obj[2]=http://pengqianyi/r/pharstation-gui-base.git</span><br><span class="line">set obj[3]=http://pengqianyi/r/pharstation-gui-module-admin.git</span><br><span class="line">set obj[4]=http://pengqianyi/r/pharstation-gui-module-consumption.git</span><br><span class="line">set obj[5]=http://pengqianyi/r/pharstation-gui-module-education.git</span><br><span class="line">set obj[6]=http://pengqianyi/r/pharstation-gui-module-home.git</span><br><span class="line">set obj[7]=http://pengqianyi/r/pharstation-gui-module-knowledgebase.git</span><br><span class="line">set obj[8]=http://pengqianyi/r/pharstation-gui-module-login.git</span><br><span class="line">set obj[9]=http://pengqianyi/r/pharstation-gui-module-main.git</span><br><span class="line">set obj[10]=http://pengqianyi/r/pharstation-gui-module-outpatient.git</span><br><span class="line">set obj[11]=http://pengqianyi/r/pharstation-gui-module-patient.git</span><br><span class="line">set obj[12]=http://pengqianyi/r/pharstation-gui-module-regulatoryreporting.git</span><br><span class="line">set obj[13]=http://pengqianyi/r/pharstation-gui-module-rxreview.git</span><br><span class="line">set obj[14]=http://pengqianyi/r/pharstation-gui-module-selectivereview.git</span><br><span class="line">set obj[15]=http://pengqianyi/r/pharstation-gui-module-statistics.git</span><br><span class="line">set obj[16]=http://pengqianyi/r/pharstation-gui-module-sysadmin.git</span><br><span class="line">set obj[17]=http://pengqianyi/r/pharstation-gui-module-tdm.git</span><br><span class="line">set obj[18]=http://pengqianyi/r/pharstation-gui-module-ureport.git</span><br><span class="line">set obj[19]=http://pengqianyi/r/pharstation-gui-tools.git</span><br><span class="line">set obj[20]=http://pengqianyi/r/pharstation-gui.git</span><br><span class="line">set obj[21]=http://pengqianyi/r/sde.git</span><br><span class="line">set obj[22]=http://pengqianyi/r/sunya-editor.git</span><br><span class="line">set obj[23]=http://pengqianyi/r/xlsx-style.git</span><br><span class="line"></span><br><span class="line">set objCurrent=0</span><br><span class="line"> </span><br><span class="line">for %%a in (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23) do (</span><br><span class="line">    for /f &quot;usebackq delims== tokens=1-2&quot; %%i in (`set obj[%%a]`) do (</span><br><span class="line">        @REM echo 第一个=%%i</span><br><span class="line">        @REM echo 第二个=%%j</span><br><span class="line">        @REM set objCurrent=%%j</span><br><span class="line">        git clone %%j</span><br><span class="line">    )</span><br><span class="line">    @REM echo objCurrent=!objCurrent!</span><br><span class="line"> </span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-
-<h1 id="此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下"><a href="#此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下" class="headerlink" title="此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下"></a>此处提供自动合并代码并且提供传入一个距离当前时间多久的number参数，如果小于就触发更新，否则不触发更新，这样能尽量避免近期没改过的项目也触发更新操作，非常的方便，脚本如下</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">SETLOCAL ENABLEDELAYEDEXPANSION</span><br><span class="line"></span><br><span class="line">echo 输入的最小提交天数为%1</span><br><span class="line"></span><br><span class="line">set &quot;$=%temp%\Spring&quot;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">%$% Echo WScript.Echo(Date.parse(new Date())/1000)</span></span><br><span class="line"></span><br><span class="line">for /f %%a in (&#x27;cscript -nologo -e:jscript %$%&#x27;) do set timestamp=%%a</span><br><span class="line"></span><br><span class="line">del /f /q %$%</span><br><span class="line"></span><br><span class="line">for /d %%a in (*) do (</span><br><span class="line">  echo  [31m</span><br><span class="line">  echo %%a</span><br><span class="line">  echo  [37m</span><br><span class="line">  cd %%a</span><br><span class="line">  git pull</span><br><span class="line">  git checkout develop</span><br><span class="line">  git branch</span><br><span class="line"></span><br><span class="line">  for /f &quot;tokens=*&quot; %%i in (&#x27;git log origin/develop --pretty^=format:&quot;%%cd&quot; --date=relative -1&#x27;) do (</span><br><span class="line">      ::echo %date:~0,10% %hour%:%Time:~3,2%:%Time:~6,2%</span><br><span class="line">	set pushTime=%%i</span><br><span class="line">      echo  [36m</span><br><span class="line">	echo !pushTime!</span><br><span class="line">      echo  [37m</span><br><span class="line">  )</span><br><span class="line">  </span><br><span class="line">  for /f &quot;tokens=*&quot; %%j in (&#x27;git log origin/develop --pretty^=format:&quot;%%cd&quot; --date=format:&quot;%%s&quot; -1&#x27;) do (</span><br><span class="line">      set gitTime=%%j</span><br><span class="line"></span><br><span class="line">      set curTime=%timestamp%</span><br><span class="line"></span><br><span class="line">      echo !gitTime!</span><br><span class="line"></span><br><span class="line">	echo !curTime!</span><br><span class="line"></span><br><span class="line">	set /a res=^(!curTime! - !gitTime!^) / ^(60 * 60 * 24^)</span><br><span class="line">	</span><br><span class="line">	echo  [35m</span><br><span class="line">	echo !res!天</span><br><span class="line">      echo  [37m</span><br><span class="line"></span><br><span class="line">      if !res! LSS %1 (</span><br><span class="line">	  ::小于提交的最小天数需要提交推送代码</span><br><span class="line">        echo 触发提交推送</span><br><span class="line">        git checkout master</span><br><span class="line">        git merge develop</span><br><span class="line">        git pull</span><br><span class="line">	  git push</span><br><span class="line">        git checkout develop</span><br><span class="line">      ) else (</span><br><span class="line">        echo 不触发提交推送</span><br><span class="line">      )</span><br><span class="line"></span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  cd ../</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-
-<h1 id="此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助"><a href="#此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助" class="headerlink" title="此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助"></a>此处为个人根据自己业务情况编写，如有不同可自己根据自己的业务进行修改，希望对大家有所帮助</h1>]]></content>
   </entry>
   <entry>
     <title>hexo 常用命令集合</title>
@@ -442,6 +442,26 @@ TD: 默认方向，从上到下 -->
       </tags>
   </entry>
   <entry>
+    <title>npm-check-updates工具包的安装与使用</title>
+    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
+    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
+
+<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发插件命令</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql8.0.17安装和配置</title>
     <url>/pqyBlog/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>去官网下载 mysql–&gt; <a href="https://dev.mysql.com/downloads/mysql/">下载地址</a></p>
@@ -482,26 +502,6 @@ TD: 默认方向，从上到下 -->
       </tags>
   </entry>
   <entry>
-    <title>npm-check-updates工具包的安装与使用</title>
-    <url>/pqyBlog/2023/01/08/npm-check-updates/</url>
-    <content><![CDATA[<h2 id="1、全局安装-npm-check-updates"><a href="#1、全局安装-npm-check-updates" class="headerlink" title="1、全局安装 npm-check-updates"></a>1、全局安装 npm-check-updates</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check-updates</span><br></pre></td></tr></table></figure>
-
-<h2 id="2、在当前项目的目录下执行以下命令，查看所有存在的更新"><a href="#2、在当前项目的目录下执行以下命令，查看所有存在的更新" class="headerlink" title="2、在当前项目的目录下执行以下命令，查看所有存在的更新"></a>2、在当前项目的目录下执行以下命令，查看所有存在的更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令"><a href="#3、也可以通过执行以下命令查看所有可用的相关命令行-命令变动或者无效时查看命令" class="headerlink" title="3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)"></a>3、也可以通过执行以下命令查看所有可用的相关命令行 (命令变动或者无效时查看命令)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -h</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、更新package-json文件"><a href="#3、更新package-json文件" class="headerlink" title="3、更新package.json文件"></a>3、更新package.json文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ncu -u</span><br></pre></td></tr></table></figure>
-
-<h2 id="4、安装最新依赖"><a href="#4、安装最新依赖" class="headerlink" title="4、安装最新依赖"></a>4、安装最新依赖</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>开发插件命令</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>spug配置前端自动化发布</title>
     <url>/pqyBlog/2023/01/01/spug%E9%85%8D%E7%BD%AE%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8F%91%E5%B8%83/</url>
     <content><![CDATA[<h1 id="spug配置前端自动化发布"><a href="#spug配置前端自动化发布" class="headerlink" title="spug配置前端自动化发布"></a>spug配置前端自动化发布</h1><h3 id="1-先ssh连接服务器"><a href="#1-先ssh连接服务器" class="headerlink" title="1. 先ssh连接服务器"></a>1. 先ssh连接服务器</h3><figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">ssh root@服务器地址</span><br></pre></td></tr></table></figure>
@@ -538,17 +538,6 @@ TD: 默认方向，从上到下 -->
       </categories>
       <tags>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>魔兽世界冰封王座(Warcraft)</title>
-    <url>/pqyBlog/2019/06/29/worldOfWarcraft/</url>
-    <content><![CDATA[<h1 id="魔兽"><a href="#魔兽" class="headerlink" title="魔兽"></a>魔兽</h1>]]></content>
-      <categories>
-        <category>game</category>
-      </categories>
-      <tags>
-        <tag>魔兽</tag>
       </tags>
   </entry>
   <entry>
@@ -660,6 +649,28 @@ TD: 默认方向，从上到下 -->
       </tags>
   </entry>
   <entry>
+    <title>魔兽世界冰封王座(Warcraft)</title>
+    <url>/pqyBlog/2019/06/29/worldOfWarcraft/</url>
+    <content><![CDATA[<h1 id="魔兽"><a href="#魔兽" class="headerlink" title="魔兽"></a>魔兽</h1>]]></content>
+      <categories>
+        <category>game</category>
+      </categories>
+      <tags>
+        <tag>魔兽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决iviewui框架table组件问题</title>
+    <url>/pqyBlog/2023/07/04/%E8%A7%A3%E5%86%B3iviewui%E6%A1%86%E6%9E%B6table%E7%BB%84%E4%BB%B6%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题"><a href="#解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题" class="headerlink" title="解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题"></a>解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题</h1><h2 id="此处提供一个mixin，以便更方便引入使用，代码如下"><a href="#此处提供一个mixin，以便更方便引入使用，代码如下" class="headerlink" title="此处提供一个mixin，以便更方便引入使用，代码如下"></a>此处提供一个mixin，以便更方便引入使用，代码如下</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 此处为tableFiexdCol.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            <span class="attr">marginLeft</span>: <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">mounted</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">fiexdCol</span>()</span><br><span class="line">        <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;resize&#x27;</span>, <span class="variable language_">this</span>.<span class="property">fiexdCol</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">destroyed</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">fiexdCol</span>()</span><br><span class="line">        <span class="variable language_">window</span>.<span class="title function_">removeEventListener</span>(<span class="string">&#x27;resize&#x27;</span>, <span class="variable language_">this</span>.<span class="property">fiexdCol</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">methods</span>: &#123;</span><br><span class="line">        <span class="title function_">fiexdCol</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="variable language_">this</span>.$nextTick(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">                <span class="keyword">const</span> tableContent = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.form-expand .ivu-table-body&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> isHaveScroll = tableContent.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">&#x27;ivu-table-overflowY&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> exBoxElmAll = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.ex-box.expand-table&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> tableFooter = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.ivu-table-footer&#x27;</span>)</span><br><span class="line">                <span class="keyword">if</span> (tableFooter) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (isHaveScroll) &#123;</span><br><span class="line">                        tableFooter.<span class="property">style</span>.<span class="property">paddingRight</span> = (<span class="variable language_">this</span>.<span class="title function_">getScrollbarWidth</span>() - <span class="number">1</span> || <span class="number">0</span>) + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                        tableFooter.<span class="property">style</span>.<span class="property">paddingRight</span> = <span class="number">0</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                exBoxElmAll.<span class="title function_">forEach</span>(<span class="function">(<span class="params">val</span>)=&gt;</span>&#123;</span><br><span class="line">                    <span class="keyword">if</span> (isHaveScroll) &#123;</span><br><span class="line">                        val.<span class="property">style</span>.<span class="property">width</span> = tableContent.<span class="property">clientWidth</span> - (<span class="variable language_">this</span>.<span class="title function_">getScrollbarWidth</span>() - <span class="number">1</span> || <span class="number">0</span>) + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        val.<span class="property">style</span>.<span class="property">width</span> = tableContent.<span class="property">clientWidth</span> + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                </span><br><span class="line">                <span class="variable language_">this</span>.$nextTick(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">                    tableContent.<span class="title function_">removeEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="variable language_">this</span>.<span class="property">expandTableScroll</span>)</span><br><span class="line">                    tableContent.<span class="title function_">addEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="variable language_">this</span>.<span class="property">expandTableScroll</span>)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">expandTableScroll</span>(<span class="params"></span>)&#123;</span><br><span class="line">            <span class="keyword">const</span> tableContent = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.form-expand .ivu-table-body&#x27;</span>)</span><br><span class="line">            <span class="keyword">const</span> tableOverflowAll = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.ex-box.expand-table .ivu-table-body&#x27;</span>)</span><br><span class="line">            tableOverflowAll.<span class="title function_">forEach</span>(<span class="function"><span class="params">val</span> =&gt;</span> &#123;</span><br><span class="line">                val.<span class="property">scrollLeft</span> = tableContent.<span class="property">scrollLeft</span></span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">marginLeft</span> = val.<span class="property">scrollLeft</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">getScrollbarWidth</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">const</span> outer = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>)</span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">visibility</span> = <span class="string">&#x27;hidden&#x27;</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">overflow</span> = <span class="string">&#x27;scroll&#x27;</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">msOverflowStyle</span> = <span class="string">&#x27;scrollbar&#x27;</span> <span class="comment">/* Microsoft Edge 和 IE 之前版本的样式 */</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">width</span> = <span class="string">&#x27;100px&#x27;</span></span><br><span class="line">            <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(outer)</span><br><span class="line">            <span class="keyword">const</span> widthNoScroll = outer.<span class="property">offsetWidth</span> <span class="comment">/* 不包含滚动条的宽度 */</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">overflow</span> = <span class="string">&#x27;scroll&#x27;</span></span><br><span class="line">            <span class="keyword">const</span> inner = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>)</span><br><span class="line">            inner.<span class="property">style</span>.<span class="property">width</span> = <span class="string">&#x27;100%&#x27;</span></span><br><span class="line">            outer.<span class="title function_">appendChild</span>(inner)</span><br><span class="line">            <span class="keyword">const</span> widthWithScroll = inner.<span class="property">offsetWidth</span> <span class="comment">/* 包含滚动条的宽度 */</span></span><br><span class="line">            outer.<span class="property">parentNode</span>.<span class="title function_">removeChild</span>(outer)</span><br><span class="line">            <span class="keyword">return</span> widthNoScroll - widthWithScroll</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上"><a href="#注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上" class="headerlink" title="注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上"></a><span style="color: red">注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上</span></h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">ExpandTable</span> <span class="keyword">from</span> <span class="string">&#x27;./expandTable.vue&#x27;</span> </span><br><span class="line"><span class="comment">// 此处为table的columns的展开配置</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;expand&#x27;</span>,</span><br><span class="line">    <span class="attr">width</span>: <span class="number">34</span>,</span><br><span class="line">    <span class="attr">align</span>: <span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">    <span class="attr">render</span>: <span class="function">(<span class="params">h, &#123; row &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title function_">h</span>(<span class="title class_">ExpandTable</span>, &#123;</span><br><span class="line">            <span class="attr">class</span>: <span class="string">&#x27;expand-table&#x27;</span>,</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 此处为expandTable.vue</span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div class=&quot;ex-box&quot; :style=&quot;&#123; marginLeft: marginLeft + &#x27;px&#x27; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import TableFiexdCol from &#x27;./mixins/tableFiexdCol&#x27;</span><br><span class="line">export default &#123;</span><br><span class="line">    mixins: [TableFiexdCol],</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="到此配置完成希望对大家有所帮助"><a href="#到此配置完成希望对大家有所帮助" class="headerlink" title="到此配置完成希望对大家有所帮助"></a>到此配置完成希望对大家有所帮助</h1>]]></content>
+  </entry>
+  <entry>
     <title>前端开发规范</title>
     <url>/pqyBlog/2023/04/19/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<h1 id="下面的规范是个人理解结合阿里前端开发规范制定的项目代码书写规范，大家可以参考一下"><a href="#下面的规范是个人理解结合阿里前端开发规范制定的项目代码书写规范，大家可以参考一下" class="headerlink" title="下面的规范是个人理解结合阿里前端开发规范制定的项目代码书写规范，大家可以参考一下"></a>下面的规范是个人理解结合阿里前端开发规范制定的项目代码书写规范，大家可以参考一下</h1><h2 id="文件和目录命名全部使用-kebab-case-命名"><a href="#文件和目录命名全部使用-kebab-case-命名" class="headerlink" title="文件和目录命名全部使用 kebab-case 命名"></a>文件和目录命名全部使用 kebab-case 命名</h2><h3 id="目录命名规范"><a href="#目录命名规范" class="headerlink" title="目录命名规范"></a>目录命名规范</h3><p>全部采用小写方式， 以中划线分隔，有复数结构时，要采用复数命名法， 缩写不用复数</p>
@@ -728,17 +739,6 @@ TD: 默认方向，从上到下 -->
       <tags>
         <tag>vue</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>解决iviewui框架table组件问题</title>
-    <url>/pqyBlog/2023/07/04/%E8%A7%A3%E5%86%B3iviewui%E6%A1%86%E6%9E%B6table%E7%BB%84%E4%BB%B6%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题"><a href="#解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题" class="headerlink" title="解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题"></a>解决iviewui框架table组件由于展开嵌套表格并且有固定定位元素时造成位置失效问题</h1><h2 id="此处提供一个mixin，以便更方便引入使用，代码如下"><a href="#此处提供一个mixin，以便更方便引入使用，代码如下" class="headerlink" title="此处提供一个mixin，以便更方便引入使用，代码如下"></a>此处提供一个mixin，以便更方便引入使用，代码如下</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 此处为tableFiexdCol.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            <span class="attr">marginLeft</span>: <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">mounted</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">fiexdCol</span>()</span><br><span class="line">        <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;resize&#x27;</span>, <span class="variable language_">this</span>.<span class="property">fiexdCol</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">destroyed</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">fiexdCol</span>()</span><br><span class="line">        <span class="variable language_">window</span>.<span class="title function_">removeEventListener</span>(<span class="string">&#x27;resize&#x27;</span>, <span class="variable language_">this</span>.<span class="property">fiexdCol</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">methods</span>: &#123;</span><br><span class="line">        <span class="title function_">fiexdCol</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="variable language_">this</span>.$nextTick(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">                <span class="keyword">const</span> tableContent = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.form-expand .ivu-table-body&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> isHaveScroll = tableContent.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">&#x27;ivu-table-overflowY&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> exBoxElmAll = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.ex-box.expand-table&#x27;</span>)</span><br><span class="line">                <span class="keyword">const</span> tableFooter = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.ivu-table-footer&#x27;</span>)</span><br><span class="line">                <span class="keyword">if</span> (tableFooter) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (isHaveScroll) &#123;</span><br><span class="line">                        tableFooter.<span class="property">style</span>.<span class="property">paddingRight</span> = (<span class="variable language_">this</span>.<span class="title function_">getScrollbarWidth</span>() - <span class="number">1</span> || <span class="number">0</span>) + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                        tableFooter.<span class="property">style</span>.<span class="property">paddingRight</span> = <span class="number">0</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                exBoxElmAll.<span class="title function_">forEach</span>(<span class="function">(<span class="params">val</span>)=&gt;</span>&#123;</span><br><span class="line">                    <span class="keyword">if</span> (isHaveScroll) &#123;</span><br><span class="line">                        val.<span class="property">style</span>.<span class="property">width</span> = tableContent.<span class="property">clientWidth</span> - (<span class="variable language_">this</span>.<span class="title function_">getScrollbarWidth</span>() - <span class="number">1</span> || <span class="number">0</span>) + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        val.<span class="property">style</span>.<span class="property">width</span> = tableContent.<span class="property">clientWidth</span> + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                </span><br><span class="line">                <span class="variable language_">this</span>.$nextTick(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">                    tableContent.<span class="title function_">removeEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="variable language_">this</span>.<span class="property">expandTableScroll</span>)</span><br><span class="line">                    tableContent.<span class="title function_">addEventListener</span>(<span class="string">&#x27;scroll&#x27;</span>, <span class="variable language_">this</span>.<span class="property">expandTableScroll</span>)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">expandTableScroll</span>(<span class="params"></span>)&#123;</span><br><span class="line">            <span class="keyword">const</span> tableContent = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.form-expand .ivu-table-body&#x27;</span>)</span><br><span class="line">            <span class="keyword">const</span> tableOverflowAll = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.ex-box.expand-table .ivu-table-body&#x27;</span>)</span><br><span class="line">            tableOverflowAll.<span class="title function_">forEach</span>(<span class="function"><span class="params">val</span> =&gt;</span> &#123;</span><br><span class="line">                val.<span class="property">scrollLeft</span> = tableContent.<span class="property">scrollLeft</span></span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">marginLeft</span> = val.<span class="property">scrollLeft</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">getScrollbarWidth</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">const</span> outer = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>)</span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">visibility</span> = <span class="string">&#x27;hidden&#x27;</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">overflow</span> = <span class="string">&#x27;scroll&#x27;</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">msOverflowStyle</span> = <span class="string">&#x27;scrollbar&#x27;</span> <span class="comment">/* Microsoft Edge 和 IE 之前版本的样式 */</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">width</span> = <span class="string">&#x27;100px&#x27;</span></span><br><span class="line">            <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(outer)</span><br><span class="line">            <span class="keyword">const</span> widthNoScroll = outer.<span class="property">offsetWidth</span> <span class="comment">/* 不包含滚动条的宽度 */</span></span><br><span class="line">            outer.<span class="property">style</span>.<span class="property">overflow</span> = <span class="string">&#x27;scroll&#x27;</span></span><br><span class="line">            <span class="keyword">const</span> inner = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>)</span><br><span class="line">            inner.<span class="property">style</span>.<span class="property">width</span> = <span class="string">&#x27;100%&#x27;</span></span><br><span class="line">            outer.<span class="title function_">appendChild</span>(inner)</span><br><span class="line">            <span class="keyword">const</span> widthWithScroll = inner.<span class="property">offsetWidth</span> <span class="comment">/* 包含滚动条的宽度 */</span></span><br><span class="line">            outer.<span class="property">parentNode</span>.<span class="title function_">removeChild</span>(outer)</span><br><span class="line">            <span class="keyword">return</span> widthNoScroll - widthWithScroll</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上"><a href="#注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上" class="headerlink" title="注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上"></a><span style="color: red">注意data里的marginLeft为表格展开的组件的根节点元素的左外边距，需要赋值到根节点上</span></h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">ExpandTable</span> <span class="keyword">from</span> <span class="string">&#x27;./expandTable.vue&#x27;</span> </span><br><span class="line"><span class="comment">// 此处为table的columns的展开配置</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;expand&#x27;</span>,</span><br><span class="line">    <span class="attr">width</span>: <span class="number">34</span>,</span><br><span class="line">    <span class="attr">align</span>: <span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">    <span class="attr">render</span>: <span class="function">(<span class="params">h, &#123; row &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title function_">h</span>(<span class="title class_">ExpandTable</span>, &#123;</span><br><span class="line">            <span class="attr">class</span>: <span class="string">&#x27;expand-table&#x27;</span>,</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 此处为expandTable.vue</span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div class=&quot;ex-box&quot; :style=&quot;&#123; marginLeft: marginLeft + &#x27;px&#x27; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import TableFiexdCol from &#x27;./mixins/tableFiexdCol&#x27;</span><br><span class="line">export default &#123;</span><br><span class="line">    mixins: [TableFiexdCol],</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h1 id="到此配置完成希望对大家有所帮助"><a href="#到此配置完成希望对大家有所帮助" class="headerlink" title="到此配置完成希望对大家有所帮助"></a>到此配置完成希望对大家有所帮助</h1>]]></content>
   </entry>
   <entry>
     <title>配置前端项目中因为配置别名导致不能跳转到文件的问题</title>
