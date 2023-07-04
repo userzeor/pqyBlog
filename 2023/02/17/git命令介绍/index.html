@@ -31,7 +31,7 @@
 <meta property="og:description" content="前言Git（读音为&#x2F;gɪt&#x2F;）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 也是 Linus Torvalds(Linux 内核的发明人)为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。git 配置相关命令介绍git 查看配置1git config -l # 查看当前git环境详细配置  git 查看系统 config">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-17T09:19:23.000Z">
-<meta property="article:modified_time" content="2023-02-20T07:47:16.361Z">
+<meta property="article:modified_time" content="2023-03-14T03:10:48.991Z">
 <meta property="article:author" content="pengqy">
 <meta property="article:tag" content="git介绍和命令解读">
 <meta name="twitter:card" content="summary">
@@ -95,7 +95,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/pqyBlog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-游戏"><a href="/pqyBlog/game" rel="section"><i class="fa fa-gamepad fa-fw"></i>游戏</a></li><li class="menu-item menu-item-电影"><a href="/pqyBlog/movies" rel="section"><i class="fa fa-film fa-fw"></i>电影</a></li><li class="menu-item menu-item-音乐"><a href="/pqyBlog/music" rel="section"><i class="fa fa-music fa-fw"></i>音乐</a></li><li class="menu-item menu-item-小说"><a href="/pqyBlog/novel" rel="section"><i class="fa fa-book fa-fw"></i>小说</a></li><li class="menu-item menu-item-tags"><a href="/pqyBlog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">15</span></a></li><li class="menu-item menu-item-categories"><a href="/pqyBlog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/pqyBlog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a></li><li class="menu-item menu-item-about"><a href="/pqyBlog/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/pqyBlog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-game"><a href="/pqyBlog/categories/game" rel="section"><i class="fa fa-gamepad fa-fw"></i>游戏</a></li><li class="menu-item menu-item-movies"><a href="/pqyBlog/movies" rel="section"><i class="fa fa-film fa-fw"></i>电影</a></li><li class="menu-item menu-item-music"><a href="/pqyBlog/music" rel="section"><i class="fa fa-music fa-fw"></i>音乐</a></li><li class="menu-item menu-item-novel"><a href="/pqyBlog/novel" rel="section"><i class="fa fa-book fa-fw"></i>小说</a></li><li class="menu-item menu-item-tags"><a href="/pqyBlog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a></li><li class="menu-item menu-item-categories"><a href="/pqyBlog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a></li><li class="menu-item menu-item-archives"><a href="/pqyBlog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">26</span></a></li><li class="menu-item menu-item-about"><a href="/pqyBlog/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -161,18 +161,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/pqyBlog/archives/">
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/pqyBlog/categories/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/pqyBlog/tags/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -248,7 +248,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-02-20 15:47:16" itemprop="dateModified" datetime="2023-02-20T15:47:16+08:00">2023-02-20</time>
+      <time title="修改时间：2023-03-14 11:10:48" itemprop="dateModified" datetime="2023-03-14T11:10:48+08:00">2023-03-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -274,7 +274,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.6k</span>
+      <span>2.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -334,7 +334,7 @@
 
 <h2 id="git-checkout"><a href="#git-checkout" class="headerlink" title="git checkout"></a>git checkout</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- [file-name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">最好加--，没有的话就把它当作切换分支看待，切换到另一个分支了，如果没有这个分支也会把它当作文件执行。</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">用暂存区的文件覆盖掉工作区的文件</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果暂存区没有可更新的就会用commit的文件更新工作区的文件</span></span><br><span class="line">git checkout [branch] # 切换分支</span><br><span class="line"></span><br><span class="line">git checkout -b [new-branch-name] # 创建并切换分支</span><br></pre></td></tr></table></figure>
 
-<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><h3 id="当对整个版本进行操作"><a href="#当对整个版本进行操作" class="headerlink" title="当对整个版本进行操作"></a>当对整个版本进行操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git reset --&#123;soft|(mixed)|hard&#125; HEAD</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">三个参数大体上的区别为：</span></span><br><span class="line"></span><br><span class="line">--mixed # 为默认值，等同于git reset。作用为：将文件回退到工作区，此时会保留工作区中的文件，但会丢弃暂存区中的文件；</span><br><span class="line">--soft # 作用为：将文件回退到暂存区，此时会保留工作区和暂存区中的文件；</span><br><span class="line">--hard # 作用为：将文件回退到修改前，此时会丢弃工作区和暂存区中的文件；</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD^^ # 用上两个版本里的所有文件撤回到暂工作区</span><br><span class="line"></span><br><span class="line">git reset --hard [commit id] # 用指定版本的所有文件撤回到工作区</span><br></pre></td></tr></table></figure>
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><h3 id="当对整个版本进行操作"><a href="#当对整个版本进行操作" class="headerlink" title="当对整个版本进行操作"></a>当对整个版本进行操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">git reset --&#123;soft|(mixed)|hard&#125; HEAD</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">三个参数大体上的区别为：</span></span><br><span class="line"></span><br><span class="line">--mixed # 为默认值，等同于git reset。作用为：将文件回退到工作区，此时会保留工作区中的文件，但会丢弃暂存区中的文件；</span><br><span class="line">--soft # 作用为：将文件回退到暂存区，此时会保留工作区和暂存区中的文件；</span><br><span class="line">--hard # 作用为：将文件回退到修改前，此时会丢弃工作区和暂存区中的文件；</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD^^ # 用上两个版本里的所有文件撤回到暂工作区</span><br><span class="line"></span><br><span class="line">git reset --hard [commit id] # 用指定版本的所有文件撤回到工作区</span><br><span class="line"></span><br><span class="line">git push origin master -f # 强制推送到主分支</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以上命令，相当于 git push --force origin master</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="当对单个文件进行操作"><a href="#当对单个文件进行操作" class="headerlink" title="当对单个文件进行操作"></a>当对单个文件进行操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD [file-name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对单个文件操作时候只能用mixed参数，而且还是可省略</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对单个文件操作时候HEAD指向不会变</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将commit中指定的文件同步到暂存区中</span></span><br><span class="line">git reset [commit-id] [file-name] # 将指定commit-id中的文件替换掉暂存区的文件</span><br></pre></td></tr></table></figure>
 
@@ -452,14 +452,14 @@ TD: 默认方向，从上到下 -->
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">14k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">35 分钟</span>
+    <span title="站点阅读时长">51 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

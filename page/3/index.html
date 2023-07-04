@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/pqyBlog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/pqyBlog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/pqyBlog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/pqyBlog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/pqyBlog/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" integrity="sha256-sXas4WVS3agQSYIETvkLOy7/3ugwtBszYSFqpCRUl8k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"userzeor.github.io","root":"/pqyBlog/","images":"/pqyBlog/images","scheme":"Gemini","darkmode":true,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/pqyBlog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/pqyBlog/js/config.js"></script>
+
+    <meta name="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pengqy的个人博客">
+<meta property="og:url" content="https://userzeor.github.io/page/3/index.html">
+<meta property="og:site_name" content="pengqy的个人博客">
+<meta property="og:description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="pengqy">
+<meta property="article:tag" content="pqy的个人博客 前端 html5 css3 es6 vue React npm git flutter mysql webpack dart hexo vpn vps">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://userzeor.github.io/page/3/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/3/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>pengqy的个人博客</title>
+  
+
+  <script src="/pqyBlog/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?bbbfbe06754439c5363c687a5441c7c1"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/pqyBlog/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/pqyBlog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">pengqy的个人博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">小小菜坤前端</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/pqyBlog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-game"><a href="/pqyBlog/categories/game" rel="section"><i class="fa fa-gamepad fa-fw"></i>游戏</a></li><li class="menu-item menu-item-movies"><a href="/pqyBlog/movies" rel="section"><i class="fa fa-film fa-fw"></i>电影</a></li><li class="menu-item menu-item-music"><a href="/pqyBlog/music" rel="section"><i class="fa fa-music fa-fw"></i>音乐</a></li><li class="menu-item menu-item-novel"><a href="/pqyBlog/novel" rel="section"><i class="fa fa-book fa-fw"></i>小说</a></li><li class="menu-item menu-item-tags"><a href="/pqyBlog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a></li><li class="menu-item menu-item-categories"><a href="/pqyBlog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a></li><li class="menu-item menu-item-archives"><a href="/pqyBlog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">26</span></a></li><li class="menu-item menu-item-about"><a href="/pqyBlog/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="pengqy"
+      src="/pqyBlog/images/avatar.png">
+  <p class="site-author-name" itemprop="name">pengqy</p>
+  <div class="site-description" itemprop="description">前端博客，前端知识讨论研究，flutter，最新技术讨论</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/pqyBlog/archives/">
+          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/pqyBlog/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/pqyBlog/tags/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button animated">
+    <button class="js-gitter-toggle-chat-button"><i class="fa fa-comment"></i>
+      聊天
+    </button>
+  </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/userzeor" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;userzeor" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:userzeor@163.com" title="E-Mail → mailto:userzeor@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2020/09/05/flutter%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2020/09/05/flutter%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">flutter 开发中遇到的问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-09-05 19:28:25" itemprop="dateCreated datePublished" datetime="2020-09-05T19:28:25+08:00">2020-09-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-17 17:09:45" itemprop="dateModified" datetime="2023-02-17T17:09:45+08:00">2023-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">移动端开发</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>65</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="flutter-开发中遇到的问题"><a href="#flutter-开发中遇到的问题" class="headerlink" title="flutter 开发中遇到的问题"></a>flutter 开发中遇到的问题</h1><h4 id="在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题"><a href="#在安卓中通过-SystemChrome-setEnabledSystemUIOverlays-设置隐藏系统状态栏时还能获取到高度的问题" class="headerlink" title="在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题"></a>在安卓中通过 SystemChrome.setEnabledSystemUIOverlays([]);设置隐藏系统状态栏时还能获取到高度的问题</h4><hr>
+<p>解决方法：</p>
+<p>在 MainActivity 类的 super.onCreate 方法后添加如下代码</p>
+<p>Kotlin:</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.setFlags(android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)</span><br></pre></td></tr></table></figure>
+
+<p>Java:</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getWindow().setFlags(android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2019/07/17/flutter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2019/07/17/flutter/" class="post-title-link" itemprop="url">从零开始搭建一个flutter项目</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-17 22:31:37" itemprop="dateCreated datePublished" datetime="2019-07-17T22:31:37+08:00">2019-07-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-17 17:09:45" itemprop="dateModified" datetime="2023-02-17T17:09:45+08:00">2023-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">移动端开发</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>386</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong><font size=4>使用镜像</font></strong><br>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> PUB_HOSTED_URL=https:<span class="comment">//pub.flutter-io.cn</span></span><br><span class="line"><span class="keyword">export</span> FLUTTER_STORAGE_BASE_URL=https:<span class="comment">//storage.flutter-io.cn</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><font size=4>安装Git for Windows</font></strong><br>Flutter 依赖此命令行工具.<br><font color=#e40909>如果已安装Git for Windows，请确保命令提示符或PowerShell中运行 git 命令，不然在后面运行flutter doctor时将出现Unable to find git in your PATH错误, 此时需要手动添加你安装的git目录的路径，例如：C:\Program Files\Git\bin至Path系统环境变量中。</font></p>
+<h1 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h1><p><strong><font size=4>使用镜像</font></strong><br>1.去 flutter 官网下载其最新可用的安装包，<a target="_blank" rel="noopener" href="https://flutter.io/sdk-archive/#windows">点击下载</a>；<br>注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包 。<br>2.将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。<br>3.在 Flutter 安装目录的 flutter 文件下找到 flutter_console.bat，双击运行并启动 flutter 命令行，接下来，你就可以在 Flutter 命令行运行 flutter 命令了。</p>
+<p>flutter packages get<br>配置镜像不然报错</p>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2019/07/17/mysql8.0.17%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">mysql8.0.17安装和配置</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-17 22:31:37" itemprop="dateCreated datePublished" datetime="2019-07-17T22:31:37+08:00">2019-07-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-17 17:09:45" itemprop="dateModified" datetime="2023-02-17T17:09:45+08:00">2023-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">框架的安装与使用</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>477</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>去官网下载 mysql–&gt; <a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">下载地址</a></p>
+<h3 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h3><p>在解压后的根目录，需要做两步小操作</p>
+<ol>
+<li>创建一个名为 data 的文件夹</li>
+<li>创建一个名为 my.ini 的文件</li>
+</ol>
+<h3 id="3-修改-my-ini-文件"><a href="#3-修改-my-ini-文件" class="headerlink" title="3.修改 my.ini 文件"></a>3.修改 my.ini 文件</h3><p>default-character-set 设置成 utf8 会报错，建议直接复制下面的粘贴</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">=</span>utf8mb4</span><br><span class="line">[mysqld]</span><br><span class="line"># 设置<span class="number">3306</span>端口</span><br><span class="line">port <span class="operator">=</span> <span class="number">3306</span></span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64</span><br><span class="line"># 设置mysql数据库的数据的存放目录</span><br><span class="line">datadir<span class="operator">=</span> E:\\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\data</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections<span class="operator">=</span><span class="number">20</span></span><br><span class="line"># 服务端使用的字符集默认为<span class="number">8</span>比特编码的latin1字符集</span><br><span class="line"><span class="type">character</span><span class="operator">-</span><span class="keyword">set</span><span class="operator">-</span>server<span class="operator">=</span>utf8mb4</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line"><span class="keyword">default</span><span class="operator">-</span>storage<span class="operator">-</span>engine<span class="operator">=</span>INNODB</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-配置-mysql-的环境变量"><a href="#4-配置-mysql-的环境变量" class="headerlink" title="4.配置 mysql 的环境变量"></a>4.配置 mysql 的环境变量</h3><ol>
+<li>找到安装 mysql 的 bin 目录复制存放地址</li>
+<li>编辑系统环境变量</li>
+<li>找到 path 点击新建粘贴复制的地址</li>
+</ol>
+<h3 id="5-以管理员身份运行-cmd"><a href="#5-以管理员身份运行-cmd" class="headerlink" title="5.以管理员身份运行 cmd"></a>5.以管理员身份运行 cmd</h3><ol>
+<li>切换到安装 mysql 的 bin 目录</li>
+<li>执行 mysqld install 命令</li>
+<li>执行 mysqld –initialize –user&#x3D;mysql –console 命令</li>
+<li>执行 net start mysql 命令</li>
+<li>执行 mysql -u root -p 命令</li>
+<li>修改密码</li>
+</ol>
+<h4 id="注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错"><a href="#注意如果前面有错误操作，请先删除-data-文件夹里的文件，不然会一直报错" class="headerlink" title="注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错"></a><strong>注意如果前面有错误操作，请先删除 data 文件夹里的文件，不然会一直报错</strong></h4><blockquote>
+<p>执行 mysqld –initialize –user&#x3D;mysql –console 命令会输出如下</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">44</span>:<span class="number">52.051415</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013169</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server <span class="keyword">in</span> progress <span class="keyword">as</span> process <span class="number">3336</span></span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">08.437004</span>Z <span class="number">5</span> [Note] [MY<span class="number">-010454</span>] [Server] A temporary password <span class="keyword">is</span> generated <span class="keyword">for</span> root<span class="variable">@localhost</span>: <span class="operator">%</span>IhckOVm8fK0</span><br><span class="line"><span class="number">2019</span><span class="number">-08</span><span class="number">-30</span>T06:<span class="number">45</span>:<span class="number">16.083958</span>Z <span class="number">0</span> [<span class="keyword">System</span>] [MY<span class="number">-013170</span>] [Server] E:\mysql<span class="number">-8.0</span><span class="number">.17</span><span class="operator">-</span>winx64\bin\mysqld.exe (mysqld <span class="number">8.0</span><span class="number">.17</span>) initializing <span class="keyword">of</span> server has completed</span><br></pre></td></tr></table></figure>
+
+<p><strong>此处会生成一个临时密码例如：</strong><br>A temporary password is generated for root@localhost: &#x3D;&#x3D;<strong>%IhckOVm8fK0</strong>&#x3D;&#x3D;，<br>等下登录 mysql 时需要用到，尽量复制，不然很容易写错</p>
+<h5 id="修改密码命令"><a href="#修改密码命令" class="headerlink" title="修改密码命令"></a>修改密码命令</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;新密码&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2019/07/17/hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2019/07/17/hexo/" class="post-title-link" itemprop="url">hexo 常用命令集合</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-17 22:19:25" itemprop="dateCreated datePublished" datetime="2019-07-17T22:19:25+08:00">2019-07-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-17 17:09:45" itemprop="dateModified" datetime="2023-02-17T17:09:45+08:00">2023-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4/" itemprop="url" rel="index"><span itemprop="name">开发框架命令</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>122</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><blockquote><ol>
+<li>生成静态文件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure> </li>
+<li>文件生成后立即部署到 deploy 配置里对应的网站<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure> </li>
+<li>监视文件变动 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -w </span><br></pre></td></tr></table></figure> </li>
+<li>起一个本地服务来进行调试 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -debug </span><br></pre></td></tr></table></figure> </li>
+<li>起一个本地服务来进行调试并监听文件变化 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s --w </span><br></pre></td></tr></table></figure> </li>
+<li>清楚缓存 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure> </li>
+<li>创建一遍新文章 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文章名称&quot; </span><br></pre></td></tr></table></figure></li>
+</ol>
+<footer><strong>userzeor</strong><cite>pengqy</cite></footer></blockquote>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2019/06/29/lol/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2019/06/29/lol/" class="post-title-link" itemprop="url">英雄联盟(lol)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-29 15:13:36" itemprop="dateCreated datePublished" datetime="2019-06-29T15:13:36+08:00">2019-06-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-26 13:28:48" itemprop="dateModified" datetime="2023-02-26T13:28:48+08:00">2023-02-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/game/" itemprop="url" rel="index"><span itemprop="name">game</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>76</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="《英雄联盟》（League-of-Legends，简称LOL）是由美国拳头游戏（Riot-Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。"><a href="#《英雄联盟》（League-of-Legends，简称LOL）是由美国拳头游戏（Riot-Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。" class="headerlink" title="《英雄联盟》（League of Legends，简称LOL）是由美国拳头游戏（Riot Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。"></a>《英雄联盟》（League of Legends，简称LOL）是由美国拳头游戏（Riot Games）于2009年开发、中国内地由腾讯游戏代理运营的英雄对战MOBA竞技网游。游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色系统。</h1>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://userzeor.github.io/2019/06/29/worldOfWarcraft/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/pqyBlog/images/avatar.png">
+      <meta itemprop="name" content="pengqy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pengqy的个人博客">
+      <meta itemprop="description" content="前端博客，前端知识讨论研究，flutter，最新技术讨论">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | pengqy的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pqyBlog/2019/06/29/worldOfWarcraft/" class="post-title-link" itemprop="url">魔兽世界冰封王座(Warcraft)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-29 15:13:36" itemprop="dateCreated datePublished" datetime="2019-06-29T15:13:36+08:00">2019-06-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-26 02:14:23" itemprop="dateModified" datetime="2023-02-26T02:14:23+08:00">2023-02-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/pqyBlog/categories/game/" itemprop="url" rel="index"><span itemprop="name">game</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="魔兽"><a href="#魔兽" class="headerlink" title="魔兽"></a>魔兽</h1>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/pqyBlog/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/pqyBlog/">1</a><a class="page-number" href="/pqyBlog/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">pengqy</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">14k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">51 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/userzeor" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.js" integrity="sha256-0af2VbC4vmPsa8OLBAKBmLoyuKq4bBlKK2KOgMWayio=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/pqyBlog/js/comments.js"></script><script src="/pqyBlog/js/utils.js"></script><script src="/pqyBlog/js/motion.js"></script><script src="/pqyBlog/js/next-boot.js"></script><script src="/pqyBlog/js/bookmark.js"></script><script src="/pqyBlog/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/pqyBlog/js/third-party/search/local-search.js"></script>
+<script class="next-config" data-name="chatra" type="application/json">{"enable":true,"async":true,"id":"ABDagn9ogRfpXyuyf"}</script>
+<script src="/pqyBlog/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"neutral","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.3.0/mermaid.min.js","integrity":"sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU="}}</script>
+  <script src="/pqyBlog/js/third-party/tags/mermaid.js"></script>
+
+  <script src="/pqyBlog/js/third-party/fancybox.js"></script>
+
+  <script src="/pqyBlog/js/third-party/live2d-widget.js"></script>
+  <script src="/pqyBlog/js/third-party/pace.js"></script>
+<script src="/pqyBlog/js/third-party/custom.js"></script>
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/pqyBlog/js/third-party/math/mathjax.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"userzeor","repo":"pqyBlog","client_id":"b6f9894e765d68ca0464","client_secret":"1947adb25eb7550ade46f448d7c4889cef8c066a","admin_user":"userzeor","distraction_free_mode":true,"proxy":"https://proxy.cors.sh/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"c13960605e396be2c5414bd1c2a4f387"}</script>
+<script src="/pqyBlog/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
